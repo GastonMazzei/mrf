@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MRF</title>
+  <meta name="description" content="MRF." />
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="brand">MRF</div>
+
+      <input id="nav-toggle" type="checkbox" aria-label="Toggle navigation" />
+      <label for="nav-toggle" class="hamburger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#programs">Programs</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Mission-Ready Framework</h1>
+        <p>Securing assets. Hardening systems. Delivering results.</p>
+        <div class="actions">
+          <a href="#capabilities" class="button">Explore</a>
+          <a href="#contact" class="button ghost">Engage</a>
+        </div>
+      </div>
+      <div class="grid-overlay" aria-hidden="true"></div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container cols">
+        <div>
+          <h2>About</h2>
+          <p>MRF designs and deploys resilient solutions across aerospace, maritime, and terrestrial domains with verifiable performance and secure supply chains.</p>
+        </div>
+        <ul class="stats">
+          <li><span class="num">24/7</span><span class="lbl">Operations</span></li>
+          <li><span class="num">ISO</span><span class="lbl">9001/27001</span></li>
+          <li><span class="num">NIST</span><span class="lbl">SP 800-53</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="capabilities" class="section">
+      <div class="container cards">
+        <article class="card">
+          <h3>Systems Integration</h3>
+          <p>Interoperable platforms, deterministic latency, and cryptographic integrity checks.</p>
+        </article>
+        <article class="card">
+          <h3>Secure Comms</h3>
+          <p>Link-layer hardening, zero-trust access, PQC readiness, and continuous monitoring.</p>
+        </article>
+        <article class="card">
+          <h3>Autonomy</h3>
+          <p>Edge inference, contested-spectrum robustness, and fail-safe control loops.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="programs" class="section">
+      <div class="container timeline">
+        <div class="milestone">
+          <span class="dot"></span>
+          <div>
+            <h4>Sentinel 3</h4>
+            <p>ISR payload control with verifiable update channels.</p>
+          </div>
+        </div>
+        <div class="milestone">
+          <span class="dot"></span>
+          <div>
+            <h4>Aegis-L</h4>
+            <p>Long-range asset protection with layered defenses.</p>
+          </div>
+        </div>
+        <div class="milestone">
+          <span class="dot"></span>
+          <div>
+            <h4>Atlas-Edge</h4>
+            <p>Ruggedized compute for austere environments.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:contact@mrf.example">contact@mrf.example</a></p>
+        <p>PGP: <code>FINGERPRINT-HERE</code></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container small">
+      <span>© <span id="y"></span> MRF Defense Systems</span>
+      <span>All rights reserved</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
