@@ -4,32 +4,23 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>MARSUPIAL RF</title>
-  <link rel="icon" href="data:," />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="topbar">
-    <div class="container">
-      <div class="brand">MARSUPIAL RF</div>
-    </div>
+  <header>
+    <h1 class="brand">MARSUPIAL RF</h1>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container hero-inner">
-        <h1>MARSUPIAL RF</h1>
-        <p class="subtitle">Site under construction</p>
-      </div>
-      <div class="grid-overlay" aria-hidden="true"></div>
-    </section>
+    <h2 class="subtitle">Site under construction</h2>
   </main>
 
-  <footer class="footer">
-    <div class="container small">
-      <span>© <span id="y"></span> MARSUPIAL RF</span>
-    </div>
+  <footer>
+    <p>© <span id="year"></span> MARSUPIAL RF</p>
   </footer>
 
-  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
