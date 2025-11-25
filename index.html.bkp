@@ -3,23 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>MARSUPIAL RF</title>
+  <title>MARSUPIAL  RF</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <img src="logo.png" alt="MARSUPIAL RF logo" class="logo" />
+  <header>
     <h1 class="brand">MARSUPIAL RF</h1>
   </header>
 
   <main>
-    <h2 class="tagline">
-      ELECTROMAGNETIC TECHNOLOGY FOR S.A.R. &amp; H.L.S.
-    </h2>
-
-    <p class="subtitle">
-      <a href="internship.html">Ver descripción de pasantía / internship actual</a>
-    </p>
+    <h2 class="subtitle">Site under construction</h2>
   </main>
 
   <footer>
@@ -31,4 +24,3 @@
   </script>
 </body>
 </html>
-
