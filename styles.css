@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+/* Base layout */
 body {
   background: #0a0a0a;
   color: #e6e6e6;
@@ -14,34 +15,99 @@ body {
   flex-direction: column;
 }
 
-header {
-  padding: 20px;
+a {
+  color: #4f8cff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header / logo */
+.site-header {
+  padding: 32px 20px 16px;
   text-align: center;
-  border-bottom: 1px solid #1f2326;
-  background: rgba(10,10,10,0.9);
+}
+
+.logo {
+  max-width: 160px;
+  height: auto;
+  display: block;
+  margin: 0 auto 12px;
 }
 
 .brand {
   font-size: 2rem;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.12em;
 }
 
+/* Homepage main section */
 main {
   flex: 1;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  padding: 0 20px 40px;
   text-align: center;
 }
 
+.tagline {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #e6e6e6;
+  margin-bottom: 20px;
+}
+
 .subtitle {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #9aa0a6;
 }
 
+/* Internship page layout */
+.page {
+  display: block;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px 20px 40px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* Typography inside content pages */
+.page h2 {
+  font-size: 1.3rem;
+  margin: 1.4rem 0 0.6rem;
+}
+
+.page p {
+  margin-bottom: 0.9rem;
+  line-height: 1.5;
+  color: #d0d0d0;
+}
+
+.page ul {
+  margin: 0.5rem 0 1rem 1.2rem;
+  line-height: 1.5;
+}
+
+.page li {
+  margin-bottom: 0.7rem;
+}
+
+/* Footer */
 footer {
   padding: 15px;
   text-align: center;
   border-top: 1px solid #1f2326;
   color: #9aa0a6;
 }
+
