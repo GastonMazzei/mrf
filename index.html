@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -8,34 +8,71 @@
 </head>
 <body>
 <header class="site-header">
-  <img src="logo.png" alt="MARSUPIAL RF logo" class="logo" />
+  <div class="header-top">
+    <img src="logo.png" alt="Logo de MARSUPIAL RF" class="logo" />
 
-  <h1 class="brand">MARSUPIAL RF</h1>
+    <div class="brand-group">
+      <h1 class="brand">MARSUPIAL RF</h1>
+      <p class="brand-subtitle">Tecnología electromagnética para defensa, seguridad y búsqueda y rescate (SAR)</p>
+    </div>
+  </div>
 
-  <nav class="navbar">
-    <a href="index.html">HOME</a>
+  <nav class="navbar" aria-label="Navegación principal">
+    <a href="index.html" aria-current="page">INICIO</a>
+    <a href="productos.html">PRODUCTOS</a>
     <a href="oportunidades.html">OPORTUNIDADES</a>
-    <a href="technical.html">TECHNICAL</a>
+    <a href="technical.html">TÉCNICO</a>
   </nav>
 </header>
 
-  <main>
-    <h2 class="tagline">
-      ELECTROMAGNETIC TECHNOLOGY FOR SAR &amp; HLS
-    </h2>
-
+<main class="home">
+  <section class="hero">
+    <h2 class="tagline">Tecnología electromagnética aplicada a SAR, C‑UAS y seguridad</h2>
     <p class="subtitle">
-      For more info contact <a href="mailto:sales@marsupialrf.com">sales@marsupialrf.com</a>
+      Desarrollamos e integramos sistemas de radiofrecuencia, detección pasiva y radiolocalización.
+      Contamos con soluciones en stock, desarrollos en curso y servicios de ingeniería para proyectos gubernamentales e industriales.
     </p>
-  </main>
 
-  <footer>
-    <p>© <span id="year"></span> MARSUPIAL RF</p>
-  </footer>
+    <div class="cta-row">
+      <a class="button" href="productos.html">Ver productos y servicios</a>
+      <a class="button button-secondary" href="#contacto">Contacto</a>
+    </div>
+  </section>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <section id="contacto" class="contact">
+    <h3>Contacto</h3>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h4>Compras internacionales</h4>
+        <p><a href="mailto:sales@marsupialrf.com">sales@marsupialrf.com</a></p>
+      </div>
+      <div class="contact-card">
+        <h4>Argentina y LATAM</h4>
+        <p><a href="mailto:defensa@marsupialrf.com">defensa@marsupialrf.com</a></p>
+      </div>
+      <div class="contact-card">
+        <h4>Consultas técnicas</h4>
+        <p><a href="mailto:engineering@marsupialrf.com">engineering@marsupialrf.com</a></p>
+      </div>
+    </div>
+
+    <p class="contact-note">
+      Para conocer el catálogo actualizado, consulte la sección <a href="productos.html">Productos</a>.
+    </p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> MARSUPIAL RF</p>
+  <p class="footer-contacts">
+    Compras internacionales: <a href="mailto:sales@marsupialrf.com">sales@marsupialrf.com</a> ·
+    Argentina y LATAM: <a href="mailto:defensa@marsupialrf.com">defensa@marsupialrf.com</a> ·
+    Consultas técnicas: <a href="mailto:engineering@marsupialrf.com">engineering@marsupialrf.com</a>
+  </p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
-

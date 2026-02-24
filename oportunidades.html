@@ -8,38 +8,48 @@
 </head>
 <body>
 <header class="site-header">
-  <img src="logo.png" alt="MARSUPIAL RF logo" class="logo" />
+  <div class="header-top">
+    <img src="logo.png" alt="Logo de MARSUPIAL RF" class="logo" />
 
-  <h1 class="brand">MARSUPIAL RF</h1>
+    <div class="brand-group">
+      <h1 class="brand">MARSUPIAL RF</h1>
+      <p class="brand-subtitle">Tecnología electromagnética para defensa, seguridad y búsqueda y rescate (SAR)</p>
+    </div>
+  </div>
 
-  <nav class="navbar">
-    <a href="index.html">HOME</a>
-    <a href="oportunidades.html">OPORTUNIDADES</a>
-    <a href="technical.html">TECHNICAL</a>
+  <nav class="navbar" aria-label="Navegación principal">
+    <a href="index.html">INICIO</a>
+    <a href="productos.html">PRODUCTOS</a>
+    <a href="oportunidades.html" aria-current="page">OPORTUNIDADES</a>
+    <a href="technical.html">TÉCNICO</a>
   </nav>
 </header>
 
-  <main class="page">
-    <a href="index.html" class="back-link">← Volver al inicio</a>
+<main class="page">
+  <a href="index.html" class="back-link">← Volver al inicio</a>
 
-    <h2>Oportunidades</h2>
+  <h2>Oportunidades</h2>
 
-    <h3>Búsquedas Abiertas</h3>
-    <p>¡Actualmente no tenemos búsquedas abiertas!</p>
+  <h3>Búsquedas abiertas</h3>
+  <p>Actualmente no tenemos búsquedas abiertas.</p>
 
-    <h3>Búsquedas Anteriores (CERRADAS)</h3>
-    <p>
-      <a href="summerinternship_2026.html">Pasantías de Verano 2026</a>
-    </p>
-  </main>
+  <h3>Búsquedas anteriores (cerradas)</h3>
+  <p>
+    <a href="summerinternship_2026.html">Pasantías de verano 2026</a>
+  </p>
+</main>
 
-  <footer>
-    <p>© <span id="year"></span> MARSUPIAL RF</p>
-  </footer>
+<footer class="site-footer">
+  <p>© <span id="year"></span> MARSUPIAL RF</p>
+  <p class="footer-contacts">
+    Compras internacionales: <a href="mailto:sales@marsupialrf.com">sales@marsupialrf.com</a> ·
+    Argentina y LATAM: <a href="mailto:defensa@marsupialrf.com">defensa@marsupialrf.com</a> ·
+    Consultas técnicas: <a href="mailto:engineering@marsupialrf.com">engineering@marsupialrf.com</a>
+  </p>
+</footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
-

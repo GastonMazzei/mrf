@@ -3,52 +3,60 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Technical | MARSUPIAL RF</title>
+  <title>Técnico | MARSUPIAL RF</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 <header class="site-header">
-  <img src="logo.png" alt="MARSUPIAL RF logo" class="logo" />
+  <div class="header-top">
+    <img src="logo.png" alt="Logo de MARSUPIAL RF" class="logo" />
 
-  <h1 class="brand">MARSUPIAL RF</h1>
+    <div class="brand-group">
+      <h1 class="brand">MARSUPIAL RF</h1>
+      <p class="brand-subtitle">Tecnología electromagnética para defensa, seguridad y búsqueda y rescate (SAR)</p>
+    </div>
+  </div>
 
-  <nav class="navbar">
-    <a href="index.html">HOME</a>
+  <nav class="navbar" aria-label="Navegación principal">
+    <a href="index.html">INICIO</a>
+    <a href="productos.html">PRODUCTOS</a>
     <a href="oportunidades.html">OPORTUNIDADES</a>
-    <a href="technical.html">TECHNICAL</a>
+    <a href="technical.html" aria-current="page">TÉCNICO</a>
   </nav>
-
 </header>
 
+<main class="page">
+  <a href="index.html" class="back-link">← Volver al inicio</a>
 
-  <main class="page">
-    <a href="index.html" class="back-link">← Volver al inicio</a>
+  <h2>Problemas abiertos</h2>
+  <p><strong>Problemas matemáticos – aplicación a TAMI VII</strong></p>
 
-    <h2>Problemas Abiertos</h2>
-    <p><strong>Problemas matemáticos – Aplicación a TAMI VII</strong></p>
+  <p>
+    En esta sección iremos recopilando problemas de carácter técnico-matemático
+    vinculados a la I+D de MARSUPIAL RF, incluyendo propuestas para talleres,
+    pasantías y colaboraciones académicas.
+  </p>
 
-    <p>
-      En esta sección iremos recopilando problemas de carácter técnico-matemático
-      vinculados a la I+D de MARSUPIAL-RF, incluyendo propuestas para talleres,
-      pasantías y colaboraciones académicas.
-    </p>
+  <p>
+    Puede ver la propuesta actual para el VII TAMI (UBA) en el siguiente enlace:
+    <br />
+    <a href="MARSUPIALRF_propuesta_TAMI7_FCEYN_UBA.pdf" target="_blank" rel="noopener">
+      Descargar propuesta TAMI VII (PDF)
+    </a>
+  </p>
+</main>
 
-    <p>
-      Podés ver la propuesta actual para el VII TAMI (UBA) en el siguiente enlace:
-      <br />
-      <a href="MARSUPIALRF_propuesta_TAMI7_FCEYN_UBA.pdf" target="_blank" rel="noopener">
-        Descargar propuesta TAMI VII (PDF)
-      </a>
-    </p>
-  </main>
+<footer class="site-footer">
+  <p>© <span id="year"></span> MARSUPIAL RF</p>
+  <p class="footer-contacts">
+    Compras internacionales: <a href="mailto:sales@marsupialrf.com">sales@marsupialrf.com</a> ·
+    Argentina y LATAM: <a href="mailto:defensa@marsupialrf.com">defensa@marsupialrf.com</a> ·
+    Consultas técnicas: <a href="mailto:engineering@marsupialrf.com">engineering@marsupialrf.com</a>
+  </p>
+</footer>
 
-  <footer>
-    <p>© <span id="year"></span> MARSUPIAL RF</p>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
-
