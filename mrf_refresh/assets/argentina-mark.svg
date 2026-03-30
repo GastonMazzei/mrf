@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 84" role="img" aria-labelledby="t d">
+<title id="t">Argentina mark</title><desc id="d">Rounded badge with Argentina flag colors and a simplified sun.</desc>
+<rect width="120" height="84" rx="24" fill="#FFFFFF"/>
+<path d="M0 0h120v28H0z" fill="#75AADB"/>
+<path d="M0 56h120v28H0z" fill="#75AADB"/>
+<g transform="translate(60 42)">
+  <circle r="11.5" fill="#F4C44E"/>
+  <g stroke="#E6B038" stroke-width="2.4" stroke-linecap="round">
+    <path d="M0-21V-16M0 16v5M21 0h-5M-21 0h5M15-15l-3.6 3.6M-15 15l3.6-3.6M15 15l-3.6-3.6M-15-15l3.6 3.6"/>
+  </g>
+</g>
+</svg>

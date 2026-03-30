@@ -1,0 +1,8 @@
+MARSUPIAL RF redesign package
+- Lighter, more modern visual palette
+- Bilingual EN/ES toggle across main pages
+- Updated products catalog layout
+- Real imagery from uploaded field/workshop photos
+- Legacy Spanish slugs preserved through redirects:
+  - productos.html -> products.html
+  - oportunidades.html -> opportunities.html
