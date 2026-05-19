@@ -835,9 +835,19 @@ main {
   color: var(--success-text);
 }
 
+.hero-chip-closed {
+  background: var(--danger-bg);
+  color: var(--danger-text);
+}
+
 .status-card-open {
   background:
     linear-gradient(180deg, rgba(51, 185, 118, 0.10) 0%, rgba(255, 255, 255, 0.9) 100%);
+}
+
+.status-card-closed {
+  background:
+    linear-gradient(180deg, rgba(225, 90, 106, 0.10) 0%, rgba(255, 255, 255, 0.9) 100%);
 }
 
 .role-grid {
