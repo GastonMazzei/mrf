@@ -26,6 +26,7 @@
         <nav class="site-nav" aria-label="Primary navigation">
           <a href="index.html" aria-current="page"><span class="lang lang-en">Home</span><span class="lang lang-es">Inicio</span></a>
 <a href="products.html"><span class="lang lang-en">Products</span><span class="lang lang-es">Productos</span></a>
+<a href="#featured-projects"><span class="lang lang-en">Projects</span><span class="lang lang-es">Proyectos</span></a>
 <a href="nuestra-vision/"><span class="lang lang-en">Our vision</span><span class="lang lang-es">Nuestra visión</span></a>
 <a href="opportunities.html"><span class="lang lang-en">Opportunities</span><span class="lang lang-es">Oportunidades</span></a>
 <a href="technical.html"><span class="lang lang-en">R&D</span><span class="lang lang-es">I+D</span></a>
@@ -65,9 +66,9 @@
       </p>
 
       <div class="cta-row">
-        <a class="button button-primary" href="products.html">
-          <span class="lang lang-en">Explore products</span>
-          <span class="lang lang-es">Ver productos</span>
+        <a class="button button-primary" href="#featured-projects">
+          <span class="lang lang-en">Explore projects</span>
+          <span class="lang lang-es">Ver proyectos</span>
         </a>
         <a class="button button-secondary" href="#contact">
           <span class="lang lang-en">Contact</span>
@@ -103,24 +104,76 @@
     </div>
   </section>
 
-  <section class="info-grid info-grid-3">
-    <article class="info-card">
-      <p class="card-kicker"><span class="lang lang-en">Capability</span><span class="lang lang-es">Capacidad</span></p>
-      <h2><span class="lang lang-en">RF imaging systems</span><span class="lang lang-es">Sistemas de radioimágenes</span></h2>
-      <p><span class="lang lang-en">A coherent multichannel system that estimates where RF energy arrives from and produces a spatial radio image across 600–6000 MHz.</span><span class="lang lang-es">Un sistema multicanal coherente que estima desde dónde llega la energía RF y produce una imagen espacial de radio entre 600 y 6000 MHz.</span></p>
-    </article>
+  <section id="featured-projects" class="featured-section" aria-labelledby="featured-title">
+    <div class="section-heading">
+      <div>
+        <p class="section-label"><span class="lang lang-en">Inside Marsupial RF</span><span class="lang lang-es">En Marsupial RF</span></p>
+        <h2 id="featured-title"><span class="lang lang-en">Featured projects</span><span class="lang lang-es">Proyectos destacados</span></h2>
+      </div>
+      <p><span class="lang lang-en">Explore the hardware behind our radio images: antenna arrays, coherent receivers, and systems built for the field.</span><span class="lang lang-es">Conocé el hardware detrás de nuestras radioimágenes: arreglos de antenas, receptores coherentes y sistemas para ensayos de campo.</span></p>
+    </div>
+    <div class="featured-grid">
+      <article class="featured-card">
+        <img class="featured-image" src="assets/hero-device.jpg" loading="lazy" width="1600" height="1067" alt="Marsupial RF equipment mounted on a test vehicle." data-alt-en="Marsupial RF equipment mounted on a test vehicle." data-alt-es="Equipamiento de Marsupial RF montado sobre un vehículo de prueba." />
+        <div class="featured-body">
+          <p class="card-kicker"><span class="lang lang-en">Spatial sensing</span><span class="lang lang-es">Sensado espacial</span></p>
+          <h3>RF Imager</h3>
+          <p><span class="lang lang-en">From incoming signals to a spatial radio image. Our multichannel platform explores the RF environment from 600 to 6000 MHz.</span><span class="lang lang-es">De las señales recibidas a una radioimagen espacial. Nuestra plataforma multicanal explora el entorno RF entre 600 y 6000 MHz.</span></p>
+          <a class="project-link" href="products.html#rf-imager"><span class="lang lang-en">Explore RF Imager</span><span class="lang lang-es">Conocé RF Imager</span><span aria-hidden="true"> ↗</span></a>
+        </div>
+      </article>
+      <article class="featured-card">
+        <img class="featured-image" src="assets/phased-array-board.jpg" loading="lazy" width="844" height="1500" alt="A Marsupial RF prototype antenna array." data-alt-en="A Marsupial RF prototype antenna array." data-alt-es="Un prototipo de arreglo de antenas de Marsupial RF." />
+        <div class="featured-body">
+          <p class="card-kicker"><span class="lang lang-en">Antennas &amp; direction finding</span><span class="lang lang-es">Antenas y radiogoniometría</span></p>
+          <h3><span class="lang lang-en">Where does the signal come from?</span><span class="lang lang-es">¿De dónde viene la señal?</span></h3>
+          <p><span class="lang lang-en">Antenna frontends and array prototypes for angle-of-arrival estimation and two-dimensional RF patterns.</span><span class="lang lang-es">Frontends de antenas y prototipos de arreglos para estimación del ángulo de arribo y patrones RF bidimensionales.</span></p>
+          <a class="project-link" href="products.html#df"><span class="lang lang-en">Explore our arrays</span><span class="lang lang-es">Conocé nuestros arreglos</span><span aria-hidden="true"> ↗</span></a>
+        </div>
+      </article>
+      <article class="featured-card">
+        <img class="featured-image featured-image-contain" src="products/receptor_8ch_ad9361.jpeg" loading="lazy" width="1200" height="1600" alt="An eight-channel receiver based on AD9361." data-alt-en="An eight-channel receiver based on AD9361." data-alt-es="Un receptor de ocho canales basado en AD9361." />
+        <div class="featured-body">
+          <p class="card-kicker"><span class="lang lang-en">Coherent acquisition</span><span class="lang lang-es">Adquisición coherente</span></p>
+          <h3><span class="lang lang-en">Eight channels. A shared view.</span><span class="lang lang-es">Ocho canales. Una mirada común.</span></h3>
+          <p><span class="lang lang-en">An AD9361-based multichannel receiver for spatial signal processing, with 12-bit acquisition and 56 MHz bandwidth per channel.</span><span class="lang lang-es">Un receptor multicanal basado en AD9361 para procesamiento espacial de señales, con adquisición de 12 bits y 56 MHz de ancho de banda por canal.</span></p>
+          <a class="project-link" href="products.html#coherent-receiver"><span class="lang lang-en">Explore the receiver</span><span class="lang lang-es">Conocé el receptor</span><span aria-hidden="true"> ↗</span></a>
+        </div>
+      </article>
+    </div>
+  </section>
 
-    <article class="info-card">
-      <p class="card-kicker"><span class="lang lang-en">Capability</span><span class="lang lang-es">Capacidad</span></p>
-      <h2><span class="lang lang-en">Direction finding and multichannel reception</span><span class="lang lang-es">Radiogoniometría y recepción multicanal</span></h2>
-      <p><span class="lang lang-en">Coherent multichannel receivers and antenna frontends for signal awareness, angle-of-arrival estimation, and mobile or fixed integrations.</span><span class="lang lang-es">Receptores multicanal coherentes y frontends de antena para conciencia situacional de señales, estimación de ángulo de arribo e integraciones móviles o fijas.</span></p>
-    </article>
-
-    <article class="info-card">
-      <p class="card-kicker"><span class="lang lang-en">Capability</span><span class="lang lang-es">Capacidad</span></p>
-      <h2><span class="lang lang-en">RF engineering services</span><span class="lang lang-es">Servicios de ingeniería RF</span></h2>
-      <p><span class="lang lang-en">RF/IF design, characterization, field testing, and technical documentation with a pragmatic approach to integration and validation.</span><span class="lang lang-es">Diseño RF/IF, caracterización, ensayos de campo y documentación técnica con un enfoque pragmático para integración y validación.</span></p>
-    </article>
+  <section class="ecosystem-section" aria-labelledby="ecosystem-title">
+    <div class="section-heading">
+      <div>
+        <p class="section-label"><span class="lang lang-en">The coherent RF community</span><span class="lang lang-es">La comunidad de RF coherente</span></p>
+        <h2 id="ecosystem-title"><span class="lang lang-en">Projects we follow</span><span class="lang lang-es">Proyectos que seguimos</span></h2>
+      </div>
+      <p><span class="lang lang-en">Independent teams making antenna arrays and spatial RF more accessible. Here are three projects that excite us.</span><span class="lang lang-es">Equipos independientes que acercan los arreglos de antenas y el procesamiento espacial de RF a más personas. Tres proyectos que nos entusiasman.</span></p>
+    </div>
+    <div class="ecosystem-grid">
+      <article class="ecosystem-card">
+        <p class="ecosystem-tag"><span class="lang lang-en">Wi-Fi sensing · Burst IQ</span><span class="lang lang-es">Sensado Wi-Fi · IQ en ráfagas</span></p>
+        <h3>ESPARGOS</h3>
+        <p><span class="lang lang-en">Eight synchronized ESP32 receivers for Wi-Fi sensing. ESP-SDR also unlocks raw IQ through an undocumented debug path, with gaps between captures.</span><span class="lang lang-es">Ocho receptores ESP32 sincronizados para sensado Wi-Fi. ESP-SDR también permite acceder a IQ crudo por una vía de depuración no documentada, con intervalos entre capturas.</span></p>
+        <div class="ecosystem-links">
+          <a href="https://espargos.net/espargos-one/">ESPARGOS One <span aria-hidden="true">↗</span></a>
+          <a href="https://espargos.net/espsdr/">ESP-SDR <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+      <article class="ecosystem-card">
+        <p class="ecosystem-tag"><span class="lang lang-en">4 RX / 4 TX · Beamforming</span><span class="lang lang-es">4 RX / 4 TX · Beamforming</span></p>
+        <h3>Scale RF / QuadRF</h3>
+        <p><span class="lang lang-en">A 4×4 MIMO platform for spatial RF and beamforming. Its mix of RF hardware, FPGA processing, and a Raspberry Pi 5 is an exciting approach to accessible arrays.</span><span class="lang lang-es">Una plataforma MIMO 4×4 para RF espacial y beamforming. Su combinación de hardware RF, procesamiento en FPGA y Raspberry Pi 5 propone un camino interesante hacia arreglos accesibles.</span></p>
+        <div class="ecosystem-links"><a href="https://www.crowdsupply.com/scale-rf/quadrf"><span class="lang lang-en">Explore QuadRF</span><span class="lang lang-es">Conocé QuadRF</span> <span aria-hidden="true">↗</span></a></div>
+      </article>
+      <article class="ecosystem-card">
+        <p class="ecosystem-tag"><span class="lang lang-en">5 RX · Direction finding</span><span class="lang lang-es">5 RX · Radiogoniometría</span></p>
+        <h3>KrakenSDR</h3>
+        <p><span class="lang lang-en">Five coherent receive channels with a shared clock and calibration hardware. A reference point for experimenting with direction finding and passive radar.</span><span class="lang lang-es">Cinco canales de recepción coherente con reloj compartido y hardware de calibración. Una referencia para experimentar con radiogoniometría y radar pasivo.</span></p>
+        <div class="ecosystem-links"><a href="https://www.krakenrf.com/about-krakensdr"><span class="lang lang-en">Explore KrakenSDR</span><span class="lang lang-es">Conocé KrakenSDR</span> <span aria-hidden="true">↗</span></a></div>
+      </article>
+    </div>
   </section>
 
   <section class="split-panel">
