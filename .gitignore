@@ -1,0 +1,7 @@
+# Local tooling and generated previews
+.DS_Store
+._*
+node_modules/
+__pycache__/
+playwright-report/
+test-results/
