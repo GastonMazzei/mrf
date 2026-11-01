@@ -1,0 +1,15 @@
+{
+  "package": "flag-icons",
+  "version": "7.6.0",
+  "source": "https://github.com/lipis/flag-icons",
+  "license": "MIT",
+  "archive_sha256": "99d6feb80562dcaa83700ef184094d7c7b6587cc216b3fab1546cb1643e611a9",
+  "country_icons": 249,
+  "served_locally": true,
+  "additional_icons": {
+    "eu": {
+      "source": "https://raw.githubusercontent.com/lipis/flag-icons/v7.6.0/flags/4x3/eu.svg",
+      "sha256": "67040ccd286857e513262bc59a6825ea8520b3e6990e42f1075712c072460c09"
+    }
+  }
+}

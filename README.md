@@ -1,6 +1,14 @@
 # MARSUPIAL RF website
 
-Bilingual English / Spanish static website. HTML, CSS and vanilla JavaScript; no build step or package installation required.
+Static English / Spanish / Brazilian Portuguese website. HTML, CSS and vanilla JavaScript; no package installation required. The homepage separates products and services, with country selection independent of language and regional editions.
+
+## Regional catalogue
+
+Edit `data/families.json` for product and service descriptions, `data/markets.json` for regional ordering, and `data/pt-BR.json` for Portuguese translations. Run `python3 scripts/build_families.py` followed by `python3 scripts/build_regions.py` after changing those sources; commit the generated pages as well. The site serves `/es/`, `/en/`, and `/br/` editions for LATAM, US/Canada, Europe, Africa, Asia, and the global fallback.
+
+`country.js` suggests a country using a client-side IP lookup, offers manual selection if it fails, and saves the visitor's choice. Location never prevents visiting another regional edition. The country dialog can be reviewed with `?choose-country=1`. `familias.html` contains the catalogue and three-level navigation; `portfolio.html` contains the case studies. `prototype.css` and `studio.css` define the current layout.
+
+French, German, Italian and Russian translations, several requested service photos, and further catalogue refinements remain pending. Do not present placeholder diagrams or conceptual renders as manufactured hardware or measured results. Internal review galleries and source-document identifiers are excluded from publication.
 
 ## Preview locally
 
@@ -45,4 +53,4 @@ Keep original social-media footage in Drive, not in this website repository. Add
 
 ## Deployment
 
-`CNAME` contains `marsupialrf.com`. A CNAME file alone does not enable hosting. At inspection on 2026-09-30, `Marsupial-RF/mrf` was a fork with GitHub Pages disabled, while its parent `GastonMazzei/mrf` had Pages enabled. Confirm the intended publishing repository and domain configuration before deployment. A pull request in this fork does not automatically update the live domain.
+`CNAME` contains `marsupialrf.com`. On 2026-11-01, GitHub Pages for `GastonMazzei/mrf` publishes the root of `main` to that domain; Pages is not enabled on `Marsupial-RF/mrf`. A push to the organization fork alone does not update the live domain. Preserve the domain and use a fast-forward or reviewed merge into the publishing repository, then verify the served HTML and regional assets. `.nojekyll` keeps this a static deployment.

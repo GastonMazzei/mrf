@@ -5,3 +5,6 @@ node_modules/
 __pycache__/
 playwright-report/
 test-results/
+.preview/
+# Private provenance of approved, optimized portfolio exports
+assets/portfolio/sources.json

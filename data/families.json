@@ -1,0 +1,1036 @@
+{
+  "default_preview": {
+    "products": [
+      "rad",
+      "rf",
+      "sys",
+      "sdr"
+    ],
+    "services": [
+      "pcb",
+      "firmware",
+      "med",
+      "rad"
+    ]
+  },
+  "families": [
+    {
+      "id": "pcb",
+      "catalog_ids": [
+        "PCB-01",
+        "PCB-02",
+        "PCB-03",
+        "PCB-04",
+        "PCB-05",
+        "PCB-06",
+        "PCB-07"
+      ],
+      "name": [
+        "Electrónica y PCB",
+        "Electronics & PCB"
+      ],
+      "summary": [
+        "Diseño a medida, especialidad RF, rediseño y acompañamiento para fabricar.",
+        "Custom design, RF expertise, redesign and manufacturing support."
+      ],
+      "image": "rf-tap-cad.webp",
+      "image_alt": [
+        "Diseño de una placa RF tap de Marsupial RF.",
+        "Marsupial RF tap board design."
+      ],
+      "intro": [
+        "Desde una consulta puntual hasta el desarrollo de un equipo. Podemos trabajar sobre una idea, una placa existente o un diseño que está por enviarse a fabricar.",
+        "From a focused consultation to a complete device development. We can work from an idea, an existing board or a design ready for manufacturing review."
+      ],
+      "options": [
+        [
+          [
+            "Diseño a medida",
+            "Custom design"
+          ],
+          [
+            "Arquitectura electrónica, esquemático y PCB según las funciones, interfaces y restricciones de tu equipo.",
+            "Electronic architecture, schematics and PCB layout for your device's functions, interfaces and constraints."
+          ]
+        ],
+        [
+          [
+            "PCB de RF y front-ends",
+            "RF PCBs & front ends"
+          ],
+          [
+            "Cadenas de radiofrecuencia, adaptación, filtrado y distribución de señales. Nuestro portfolio muestra placas y prototipos propios.",
+            "RF signal chains, matching, filtering and signal distribution. Our portfolio includes our own boards and prototypes."
+          ]
+        ],
+        [
+          [
+            "Rediseño e integración",
+            "Redesign & integration"
+          ],
+          [
+            "Mejorar un equipo existente, reemplazar componentes o integrar varios módulos en una solución más compacta.",
+            "Improve an existing device, replace components or integrate several modules into a more compact solution."
+          ]
+        ],
+        [
+          [
+            "Revisión antes de fabricar",
+            "Pre-manufacturing review"
+          ],
+          [
+            "Consulta de 30 minutos o acompañamiento por hora para revisar tu PCB, resolver dudas y preparar un envío a JLCPCB u otro fabricante. Para Argentina y clientes internacionales; el alcance depende de la complejidad del diseño.",
+            "A 30-minute consultation or hourly support to review your PCB, discuss questions and prepare an order with JLCPCB or another manufacturer. Available to clients in Argentina and abroad; scope depends on design complexity."
+          ]
+        ],
+        [
+          [
+            "Prototipo, validación y documentación",
+            "Prototype, validation & handover"
+          ],
+          [
+            "Según el alcance: coordinación de fabricación y montaje, puesta en marcha, mediciones, lista de materiales y archivos para fabricar y mantener el diseño.",
+            "As scoped: fabrication and assembly coordination, bring-up, measurements, bill of materials and files needed to manufacture and maintain the design."
+          ]
+        ]
+      ],
+      "portfolio": "portfolio.html#rf-tap",
+      "service_short": [
+        "PCB",
+        "PCB"
+      ],
+      "service_tags": [
+        [
+          "Diseño · RF · Rediseño",
+          "Design · RF · Redesign"
+        ],
+        [
+          "Revisión antes de fabricar",
+          "Pre-manufacturing review"
+        ]
+      ],
+      "service_title": [
+        "Diseño y fabricación de PCB",
+        "PCB Design and Manufacture"
+      ],
+      "service_description": [
+        "Más de cinco años de experiencia en diseño y fabricación de PCB.",
+        "More than five years of experience in PCB design and manufacture."
+      ],
+      "service_media": [
+        {
+          "src": "assets/operations/pcb-workbench.jpg",
+          "alt": [
+            "Trabajo de electrónica en nuestro laboratorio, visto desde arriba.",
+            "Electronics work in our laboratory, seen from above."
+          ],
+          "class": "operational"
+        }
+      ]
+    },
+    {
+      "id": "rf",
+      "catalog_ids": [
+        "RF-01",
+        "RF-02",
+        "RF-03"
+      ],
+      "name": [
+        "Equipos de microondas",
+        "Microwave equipment"
+      ],
+      "summary": [
+        "Filtros, conmutación y módulos de acceso a señales en una misma familia.",
+        "Filters, switching and signal-access modules in one family."
+      ],
+      "image": "rf-tap-built.webp",
+      "image_alt": [
+        "Placa RF tap construida por Marsupial RF.",
+        "RF tap board built by Marsupial RF."
+      ],
+      "intro": [
+        "Módulos de microondas a medida. Banda, geometría e interfaces definidas en contacto directo con nuestro equipo de desarrollo.",
+        "Custom microwave modules. Frequency band, geometry and interfaces defined directly with our development team."
+      ],
+      "options": [
+        [
+          [
+            "Filtros de cavidad ultralivianos",
+            "Ultralight cavity filters"
+          ],
+          [
+            "Desarrollo de filtros de bajo peso para plataformas aéreas y sistemas con restricciones de masa. Geometría e integración según la aplicación.",
+            "Development of lightweight filters for airborne platforms and weight-critical systems. Geometry and integration tailored to the application."
+          ],
+          {
+            "src": "assets/concepts/cavity-shell.svg",
+            "alt": [
+              "Concepto de envolvente de filtro con cuatro cavidades y tapa separada.",
+              "Concept of a four-cavity filter shell with an exploded cover."
+            ],
+            "caption": [
+              "Concepto geométrico · línea en desarrollo",
+              "Geometry concept · development programme"
+            ]
+          }
+        ],
+        [
+          [
+            "Filtros y multiplexores",
+            "Filters & multiplexers"
+          ],
+          [
+            "Filtros individuales, bancos conmutados y separación o combinación de bandas. Configuraciones a medida para integrar en tu equipo.",
+            "Individual filters, switched banks and band separation or combination. Custom configurations for integration into your equipment."
+          ],
+          {
+            "src": "assets/portfolio/filter-bank-built.webp",
+            "alt": [
+              "Banco de filtros construido por Marsupial RF.",
+              "Filter bank built by Marsupial RF."
+            ],
+            "caption": [
+              "Banco de filtros · foto de nuestro taller",
+              "Filter bank · from our workshop"
+            ]
+          }
+        ],
+        [
+          [
+            "Conmutación RF",
+            "RF switching"
+          ],
+          [
+            "Selección de caminos de señal y control a medida. Evaluamos geometrías especiales y PCB flexibles según la aplicación; la banda se define con los componentes y la validación del conjunto.",
+            "Custom signal-path selection and control. We assess shaped layouts and flexible PCBs for the application; frequency coverage follows component selection and system validation."
+          ],
+          {
+            "src": "assets/portfolio/filter-bank-cad.webp",
+            "alt": [
+              "CAD propio de un banco de filtros con conmutación RF integrada.",
+              "Our filter-bank CAD with integrated RF switching."
+            ],
+            "caption": [
+              "Ejemplo propio · conmutación integrada en banco de filtros",
+              "Our design · switching integrated into a filter bank"
+            ]
+          }
+        ],
+        [
+          [
+            "RF probes y taps",
+            "RF probes & taps"
+          ],
+          [
+            "Tomas de señal y acoplamientos débiles para acceder a una cadena RF e integrarla con instrumentación o análisis. Banda y nivel de acoplamiento según el proyecto.",
+            "Signal taps and weak coupling for RF-chain access and integration with instrumentation or analysis. Frequency band and coupling level are defined for each project."
+          ],
+          {
+            "src": "assets/portfolio/rf-tap-built.webp",
+            "alt": [
+              "RF tap construido y fotografiado en el taller de Marsupial RF.",
+              "RF tap built and photographed in the Marsupial RF workshop."
+            ],
+            "caption": [
+              "RF tap · foto de nuestro taller",
+              "RF tap · from our workshop"
+            ]
+          }
+        ]
+      ],
+      "portfolio": "portfolio.html#filter-bank",
+      "preview_images": [
+        "rf-tap-built.webp",
+        "rf-tap-cad.webp"
+      ],
+      "preview_tags": [
+        [
+          "RF taps",
+          "RF taps"
+        ],
+        [
+          "Diseño e implementación",
+          "Design & implementation"
+        ]
+      ],
+      "service_title": [
+        "Integración RF a medida",
+        "Custom RF integration"
+      ],
+      "service_short": [
+        "Integración RF",
+        "RF integration"
+      ],
+      "service_tags": [
+        [
+          "Multiplexores · Pasabanda",
+          "Multiplexers · Bandpass"
+        ],
+        [
+          "Frontends RF",
+          "RF front ends"
+        ]
+      ],
+      "service_flow": [
+        [
+          "Tus bandas y señales",
+          "Your bands & signals"
+        ],
+        [
+          "Filtros + PCB + conectores",
+          "Filters + PCB + connectors"
+        ],
+        [
+          "Un módulo integrado",
+          "One integrated module"
+        ]
+      ],
+      "service_intro": [
+        "Integramos filtros y componentes RF en una PCB, con adaptación y conectores para tu equipo. También combinamos varias bandas en un módulo a medida.",
+        "We integrate RF filters and components on a PCB, with matching and connectors for your equipment. We also combine multiple bands in a custom module."
+      ],
+      "service_options": [
+        [
+          [
+            "Multiplexores a medida",
+            "Custom multiplexer services"
+          ],
+          [
+            "Combinación o separación de varias bandas: selección de filtros, interconexión en PCB y puertos para tu sistema.",
+            "Combine or separate multiple bands: filter selection, PCB interconnection and ports for your system."
+          ]
+        ],
+        [
+          [
+            "Filtros pasabanda integrados",
+            "Custom bandpass services"
+          ],
+          [
+            "Incorporamos el filtro a una placa con adaptación y conectores. Banda, pérdidas y rechazo se acuerdan como objetivos y se verifican en el conjunto.",
+            "We integrate the filter on a board with matching and connectors. Band, loss and rejection are agreed as targets and verified on the assembly."
+          ]
+        ],
+        [
+          [
+            "Frontends RF",
+            "RF front-end services"
+          ],
+          [
+            "Integración de filtrado, conmutación y acceso a la señal según tu cadena de recepción o instrumentación.",
+            "Integrate filtering, switching and signal access for your receiver or instrumentation chain."
+          ]
+        ],
+        [
+          [
+            "Formato e interfaces",
+            "Form factor & interfaces"
+          ],
+          [
+            "Definimos contorno, montaje, alimentación, control y conectores para incorporar el módulo a tu equipo.",
+            "Define the outline, mounting, power, control and connectors to fit the module into your equipment."
+          ]
+        ]
+      ],
+      "preview_description": [
+        "Electrónica, filtros multibanda, switches de banda ancha, antenas ultralivianas y filtros de cavidad para comunicaciones aéreas.",
+        "General electronics, multiband filters, wideband switches, ultralight antennas and cavity filters for sensitive airborne communications."
+      ],
+      "preview_media": [
+        {
+          "src": "assets/portfolio/patch-array-cad.webp",
+          "alt": [
+            "Render de nuestro arreglo de antenas.",
+            "Render of our antenna array."
+          ],
+          "class": "cad"
+        },
+        {
+          "src": "assets/portfolio/filter-bank-built.webp",
+          "alt": [
+            "Banco de filtros RF construido.",
+            "Built RF filter bank."
+          ],
+          "class": ""
+        },
+        {
+          "src": "assets/portfolio/rf-tap-cad.webp",
+          "alt": [
+            "Render del RF tap.",
+            "RF tap render."
+          ],
+          "class": "cad"
+        }
+      ]
+    },
+    {
+      "id": "ant",
+      "catalog_ids": [
+        "ANT-01",
+        "ANT-02",
+        "ANT-03",
+        "ANT-04",
+        "ANT-05"
+      ],
+      "name": [
+        "Antenas y radomos",
+        "Antennas & radomes"
+      ],
+      "summary": [
+        "Antenas de bajo perfil, arreglos y protección adaptados a tu plataforma.",
+        "Low-profile antennas, arrays and protection tailored to your platform."
+      ],
+      "image": "patch-array-cad.webp",
+      "image_alt": [
+        "Render del arreglo de antenas diseñado por Marsupial RF.",
+        "Render of the antenna array designed by Marsupial RF."
+      ],
+      "intro": [
+        "La antena forma parte del equipo: consideramos sus dimensiones, integración mecánica y entorno de operación junto con el comportamiento electromagnético.",
+        "An antenna is part of a larger device: dimensions, mechanical integration and operating environment matter alongside electromagnetic performance."
+      ],
+      "options": [
+        [
+          [
+            "Antenas ultralivianas para plataformas aéreas",
+            "Ultralight antennas for airborne platforms"
+          ],
+          [
+            "Diseño de geometría, metalizado e integración según banda, masa, polarización y montaje.",
+            "Geometry, metallization and integration design for the required band, mass, polarization and mounting."
+          ]
+        ],
+        [
+          [
+            "Arreglos y patch arrays",
+            "Antenna arrays & patch arrays"
+          ],
+          [
+            "Configuración, alimentación e integración de arreglos según la aplicación.",
+            "Array configuration, feeding and integration for the intended application."
+          ],
+          {
+            "src": "assets/portfolio/patch-array-cad.webp",
+            "alt": [
+              "Arreglo de antenas: diseño CAD existente.",
+              "Antenna array: existing CAD design."
+            ],
+            "class": "",
+            "caption": [
+              "Diseño CAD de nuestro portfolio.",
+              "CAD design from our portfolio."
+            ]
+          }
+        ],
+        [
+          [
+            "Polarización y banda",
+            "Polarization & bandwidth"
+          ],
+          [
+            "Desarrollos de doble polarización o banda ancha, con requisitos y ensayos definidos por proyecto.",
+            "Dual-polarization or broadband developments, with project-specific requirements and testing."
+          ]
+        ],
+        [
+          [
+            "Radomos selectivos en frecuencia",
+            "Frequency-selective radomes"
+          ],
+          [
+            "Investigación de radomos y superficies para controlar bandas de paso y rechazo.",
+            "Research into radomes and surfaces for passband and stopband control."
+          ]
+        ]
+      ],
+      "portfolio": "portfolio.html#patch-array",
+      "service_title": [
+        "Diseño de antenas y radomos",
+        "Antenna & radome design"
+      ]
+    },
+    {
+      "id": "sys",
+      "catalog_ids": [
+        "SYS-01",
+        "SYS-02",
+        "SYS-03",
+        "SYS-04",
+        "SYS-05"
+      ],
+      "name": [
+        "Radioimágenes y localización",
+        "RF imaging & localization"
+      ],
+      "summary": [
+        "Una familia para observar de dónde vienen las señales y relacionarlas con el entorno.",
+        "One family for observing where signals come from and relating them to their surroundings."
+      ],
+      "image": "rf-imager-fie.jpg",
+      "image_alt": [
+        "RF Imager presentado en FIE, según el material provisto por Marsupial RF.",
+        "RF Imager shown at FIE, from material supplied by Marsupial RF."
+      ],
+      "intro": [
+        "Radioimágenes, dirección de llegada y escaneo RF de ambientes.",
+        "RF imaging, direction of arrival and room RF scanning."
+      ],
+      "options": [
+        [
+          [
+            "RF Imager / dirección de llegada",
+            "RF Imager / direction of arrival"
+          ],
+          [
+            "Visualización espacial y estimación de la dirección de señales de radiofrecuencia.",
+            "Spatial visualization and direction estimation of radio-frequency signals."
+          ]
+        ],
+        [
+          [
+            "Escaneo de ambientes",
+            "Room scanning"
+          ],
+          [
+            "Mapas espaciales de intensidad RF como una aplicación de la plataforma.",
+            "Spatial RF-intensity maps as a platform application."
+          ]
+        ],
+        [
+          [
+            "IMU, cámaras y SLAM",
+            "IMU, cameras & SLAM"
+          ],
+          [
+            "Integraciones propuestas para relacionar mediciones RF con orientación, imágenes y mapas del entorno. Su validación forma parte del desarrollo.",
+            "Proposed integrations linking RF measurements to orientation, imagery and environment maps. Validation is part of development."
+          ]
+        ],
+        [
+          [
+            "Sistemas para escenarios específicos",
+            "Scenario-specific systems"
+          ],
+          [
+            "Estudios e integración para búsqueda, localización y sensado a través de obstáculos, según los requisitos y la viabilidad del escenario.",
+            "Studies and integration for search, localization and sensing through obstacles, according to requirements and scenario feasibility."
+          ]
+        ]
+      ],
+      "portfolio": null,
+      "preview_title": [
+        "Imágenes por radiofrecuencia",
+        "Radio Frequency Imaging"
+      ],
+      "preview_tags": [
+        [
+          "Dirección de llegada",
+          "Direction of arrival"
+        ],
+        [
+          "Mapas RF",
+          "RF maps"
+        ]
+      ],
+      "preview_description": [
+        "Imágenes instantáneas para aplicaciones de búsqueda y rescate.",
+        "Instantaneous imaging for search and rescue applications."
+      ],
+      "preview_media": [
+        {
+          "src": "assets/operations/rf-imager-operation.jpg",
+          "alt": [
+            "RF Imager en una demostración; sin rostros visibles.",
+            "RF Imager in a demonstration, with no visible faces."
+          ],
+          "class": "imager"
+        }
+      ]
+    },
+    {
+      "id": "sdr",
+      "catalog_ids": [
+        "SDR-01",
+        "SDR-02",
+        "SDR-03",
+        "SDR-04"
+      ],
+      "name": [
+        "SDR y adquisición coherente",
+        "SDR & coherent acquisition"
+      ],
+      "summary": [
+        "Plataformas multicanal, sincronización e integración para adquirir y procesar señales.",
+        "Multichannel platforms, synchronization and integration for signal acquisition and processing."
+      ],
+      "visual": "I/Q · CLOCK · SYNC",
+      "intro": [
+        "Elegimos la arquitectura a partir de los canales necesarios, ancho de banda, coherencia y flujo de datos de cada aplicación.",
+        "Architecture follows the application's channel count, bandwidth, coherence and data-flow requirements."
+      ],
+      "options": [
+        [
+          [
+            "Recepción multicanal",
+            "Multichannel reception"
+          ],
+          [
+            "Plataformas receptoras coherentes y adquisición de señales.",
+            "Coherent receiver platforms and signal acquisition."
+          ]
+        ],
+        [
+          [
+            "Transceptores e interfaces",
+            "Transceivers & interfaces"
+          ],
+          [
+            "Configuración de transmisión y recepción, transporte de datos e integración con el equipo.",
+            "Transmit/receive configuration, data transport and host-system integration."
+          ]
+        ],
+        [
+          [
+            "Sincronización y calibración",
+            "Synchronization & calibration"
+          ],
+          [
+            "Alineación temporal, referencia de reloj y calibración entre canales según el alcance.",
+            "Timing alignment, clock references and channel calibration as scoped."
+          ]
+        ]
+      ],
+      "preview_title": [
+        "SDR coherentes multicanal a precio competitivo",
+        "Price Competitive Multi-channel Coherent SDRs"
+      ],
+      "preview_description": [
+        "Turtle SDR: plataforma modular, escalable y de precio competitivo para proyectos coherentes multicanal y de banda ultraancha.",
+        "Turtle SDR: a scalable, cost-efficient modular platform for many-channel coherent and ultra-wideband projects."
+      ],
+      "preview_media": [
+        {
+          "src": "assets/operations/coherent-sdr-stack.jpg",
+          "alt": [
+            "SDR multicanal apilados y encendidos en nuestro banco.",
+            "Stacked multichannel SDRs powered on at our bench."
+          ],
+          "class": "operational"
+        }
+      ]
+    },
+    {
+      "id": "rad",
+      "catalog_ids": [
+        "RAD-01",
+        "RAD-02",
+        "RAD-03"
+      ],
+      "name": [
+        "Radar y monitoreo",
+        "Radar & monitoring"
+      ],
+      "summary": [
+        "Desarrollos de radar para detección, formación de imágenes y observación de desplazamientos.",
+        "Radar developments for detection, imaging and displacement observation."
+      ],
+      "intro": [
+        "Partimos del fenómeno que se necesita medir y de las condiciones del sitio para definir la arquitectura y las pruebas.",
+        "We start from the phenomenon to be measured and site conditions to define the architecture and tests."
+      ],
+      "options": [
+        [
+          [
+            "Radar pasivo",
+            "Passive radar"
+          ],
+          [
+            "Estudio de detección con emisores externos y un escenario definido.",
+            "Detection studies using external transmitters in a defined scenario."
+          ]
+        ],
+        [
+          [
+            "SAR / GB-InSAR",
+            "SAR / GB-InSAR"
+          ],
+          [
+            "Desarrollo experimental para imagen y medición de desplazamientos; calibración y repetibilidad forman parte de la validación.",
+            "Experimental development for imaging and displacement measurement; calibration and repeatability are part of validation."
+          ]
+        ],
+        [
+          [
+            "Radar activo y arreglos",
+            "Active radar & arrays"
+          ],
+          [
+            "Estudio y desarrollo de sistemas activos de acuerdo con los requisitos.",
+            "Studies and development of active systems according to requirements."
+          ]
+        ],
+        [
+          [
+            "Monitoreo de desplazamientos",
+            "Displacement monitoring"
+          ],
+          [
+            "Estudio de aplicación, adquisición y análisis para observar cambios en una estructura o un sitio. El alcance se define con la geometría y las condiciones de medición.",
+            "Application assessment, acquisition and analysis to observe changes in a structure or site. Scope follows geometry and measurement conditions."
+          ]
+        ]
+      ],
+      "service_short": [
+        "SAR / GB-InSAR",
+        "SAR / GB-InSAR"
+      ],
+      "service_title": [
+        "Monitoreo de desplazamientos",
+        "Displacement monitoring"
+      ],
+      "service_tags": [
+        [
+          "SAR / GB-InSAR",
+          "SAR / GB-InSAR"
+        ],
+        [
+          "Estudios y mediciones",
+          "Studies & measurements"
+        ]
+      ],
+      "preview_title": [
+        "Detección pasiva de drones",
+        "Passive drone detection"
+      ],
+      "preview_description": [
+        "Radar pasivo móvil de un solo nodo, sobre señales de comunicaciones terrestres.",
+        "Mobile single-node passive radar over terrestrial communication signals."
+      ],
+      "preview_media": [
+        {
+          "src": "assets/portfolio/field-system.webp",
+          "alt": [
+            "Sistema de radar pasivo móvil con una antena LTE comercial integrada.",
+            "Mobile passive radar system with an integrated commercial LTE antenna."
+          ],
+          "class": ""
+        }
+      ],
+      "service_description": [
+        "Monitoreo preventivo de deslizamientos junto con expertos en geofísica.",
+        "Preventive landslide monitoring together with geophysical experts."
+      ],
+      "service_media": [
+        {
+          "src": "assets/operations/sar-field.jpg",
+          "alt": [
+            "GB-InSAR en una prueba de campo junto al río.",
+            "GB-InSAR in a field test by the river."
+          ],
+          "class": "sar"
+        }
+      ],
+      "service_intro": [
+        "Medición de desplazamientos y estudio del sitio junto con especialistas en geofísica.",
+        "Displacement measurement and site assessment alongside geophysical specialists."
+      ],
+      "service_options": [
+        [
+          [
+            "Monitoreo de desplazamientos",
+            "Displacement monitoring"
+          ],
+          [
+            "Estudio de aplicación, adquisición y análisis para observar cambios en una estructura o un sitio. El alcance se define con la geometría y las condiciones de medición.",
+            "Application assessment, acquisition and analysis to observe changes in a structure or site. Scope follows geometry and measurement conditions."
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "firmware",
+      "catalog_ids": [],
+      "name": [
+        "Software y firmware",
+        "Software & firmware"
+      ],
+      "summary": [
+        "Firmware, software e integración de cámaras y sensores para equipos y procesos.",
+        "Firmware, software, camera and sensor integration for devices and processes."
+      ],
+      "visual": "CÁMARAS Y SENSORES → SOFTWARE Y FIRMWARE → MEDICIÓN Y CONTROL",
+      "intro": [
+        "Desarrollos para adquirir datos, procesarlos y controlar equipos. El alcance y las pruebas se definen con el proceso del cliente.",
+        "Development for data acquisition, processing and device control. Scope and tests are defined around the client’s process."
+      ],
+      "options": [
+        [
+          [
+            "Firmware de equipos",
+            "Device firmware"
+          ],
+          [
+            "Control de periféricos, comunicaciones e interfaces para electrónica a medida.",
+            "Peripheral control, communications and interfaces for custom electronics."
+          ]
+        ],
+        [
+          [
+            "Software e integración",
+            "Software & integration"
+          ],
+          [
+            "Adquisición y registro de datos, interfaces de operación e integración con sistemas existentes.",
+            "Data acquisition and logging, operator interfaces and integration with existing systems."
+          ]
+        ],
+        [
+          [
+            "Visión por computadora",
+            "Computer vision"
+          ],
+          [
+            "Pilotos de inspección, conteo y medición con cámaras, evaluados con imágenes representativas del proceso.",
+            "Camera-based inspection, counting and measurement pilots, evaluated using representative process images."
+          ]
+        ],
+        [
+          [
+            "Producción y control",
+            "Production & control"
+          ],
+          [
+            "Adquisición de variables, automatización e integración con los sistemas existentes.",
+            "Process-variable acquisition, automation and integration with existing systems."
+          ]
+        ],
+        [
+          [
+            "Puesta en marcha",
+            "Bring-up"
+          ],
+          [
+            "Diagnóstico, integración y pruebas con entregables definidos para cada proyecto.",
+            "Diagnostics, integration and testing with project-specific deliverables."
+          ]
+        ]
+      ],
+      "service_flow": [
+        [
+          "Cámaras y sensores",
+          "Cameras & sensors"
+        ],
+        [
+          "Software y firmware",
+          "Software & firmware"
+        ],
+        [
+          "Medición y control",
+          "Measurement & control"
+        ]
+      ],
+      "service_tags": [
+        [
+          "Firmware · Control",
+          "Firmware · Control"
+        ],
+        [
+          "Visión por computadora",
+          "Computer vision"
+        ]
+      ],
+      "service_title": [
+        "Desarrollo de software y firmware",
+        "Software and Firmware Development"
+      ],
+      "service_description": [
+        "Más de diez años de experiencia en software y sistemas embebidos, incluidos proyectos satelitales. Precio competitivo y formación en computación.",
+        "Over ten years of software and embedded-systems experience, including satellite projects. Competitive pricing and computer-science expertise."
+      ]
+    },
+    {
+      "id": "med",
+      "catalog_ids": [
+        "MED-01",
+        "MED-02",
+        "MED-03"
+      ],
+      "name": [
+        "Sensores y mediciones",
+        "Sensors & measurements"
+      ],
+      "summary": [
+        "Cuantificar un proceso, detectar interferencias o entender la cobertura de un sistema.",
+        "Quantify a process, diagnose interference or understand system coverage."
+      ],
+      "visual": "MEDIR · ENTENDER · MEJORAR",
+      "intro": [
+        "Convertimos una pregunta de operación en variables, un plan de medición y resultados que ayuden a decidir.",
+        "We turn an operational question into variables, a measurement plan and results that support decisions."
+      ],
+      "options": [
+        [
+          [
+            "Instrumentación de procesos",
+            "Process instrumentation"
+          ],
+          [
+            "Selección e integración de sensores para registrar variables de equipos y procesos.",
+            "Sensor selection and integration for recording device and process variables."
+          ]
+        ],
+        [
+          [
+            "Señal e interferencias",
+            "Signals & interference"
+          ],
+          [
+            "Relevamiento, diagnóstico y campañas de medición RF.",
+            "RF surveys, diagnostics and measurement campaigns."
+          ]
+        ],
+        [
+          [
+            "Cobertura y enlaces",
+            "Coverage & links"
+          ],
+          [
+            "Mapas RF y evaluación de ubicaciones de antenas para mejorar la operación.",
+            "RF maps and antenna-placement assessments to improve operation."
+          ]
+        ]
+      ],
+      "service_flow": [
+        [
+          "Variable del proceso",
+          "Process variable"
+        ],
+        [
+          "Sensores y adquisición",
+          "Sensors & acquisition"
+        ],
+        [
+          "Registro y monitoreo",
+          "Logging & monitoring"
+        ]
+      ],
+      "service_title": [
+        "Automatización industrial",
+        "Industrial Automation"
+      ],
+      "service_description": [
+        "Monitoreo cuantitativo de procesos industriales e Industria 4.0.",
+        "Quantitative monitoring of industrial processes and Industry 4.0."
+      ]
+    },
+    {
+      "id": "local-ai",
+      "catalog_ids": [],
+      "name": [
+        "IA local para empresas",
+        "Local AI for businesses"
+      ],
+      "summary": [
+        "Evaluación y pilotos de IA en infraestructura propia, a partir de una necesidad concreta.",
+        "Local AI assessments and pilots built around a concrete business need."
+      ],
+      "visual": "TU EMPRESA · TUS DATOS",
+      "intro": [
+        "Una puerta de entrada para PyMEs que quieren explorar IA local. Primero definimos el uso, los datos, los recursos y cómo medir si un piloto aporta valor.",
+        "A starting point for small and medium businesses exploring local AI. We first define the use case, data, resources and how to measure a pilot's value."
+      ],
+      "options": [
+        [
+          [
+            "Evaluación de necesidades",
+            "Needs assessment"
+          ],
+          [
+            "Identificar tareas útiles y comparar viabilidad, infraestructura y costos.",
+            "Identify useful tasks and compare feasibility, infrastructure and costs."
+          ]
+        ],
+        [
+          [
+            "Piloto e integración",
+            "Pilot & integration"
+          ],
+          [
+            "Probar un caso acotado e integrar las herramientas necesarias, con alcance acordado.",
+            "Test a focused use case and integrate the required tools within an agreed scope."
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "con",
+      "catalog_ids": [
+        "CON-01"
+      ],
+      "name": [
+        "Conectividad",
+        "Connectivity"
+      ],
+      "summary": [
+        "Relevamiento e integración de conectividad para campo y sitios remotos.",
+        "Connectivity surveys and integration for field operations and remote sites."
+      ],
+      "intro": [
+        "Estudiamos el sitio, las necesidades de comunicación y la infraestructura disponible.",
+        "We assess the site, communication needs and available infrastructure."
+      ],
+      "options": [
+        [
+          [
+            "Enlaces e integración",
+            "Links & integration"
+          ],
+          [
+            "Relevamiento, diseño de solución e integración según el escenario y el alcance acordados.",
+            "Site assessment, solution design and integration for the agreed scenario and scope."
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "sal",
+      "catalog_ids": [
+        "SAL-01",
+        "SAL-02"
+      ],
+      "name": [
+        "Tecnología para salud",
+        "Health technology"
+      ],
+      "summary": [
+        "Una línea joven de investigación y desarrollo, abierta a colaboraciones.",
+        "An early research and development programme, open to collaboration."
+      ],
+      "intro": [
+        "Estamos explorando nuevas formas de sensado. Estos proyectos están en desarrollo y buscan construir evidencia experimental junto con colaboradores.",
+        "We are exploring new sensing approaches. These projects are in development and seek to build experimental evidence with collaborators."
+      ],
+      "options": [
+        [
+          [
+            "FieldDS · investigación",
+            "FieldDS · research"
+          ],
+          [
+            "Investigación de sensado electromagnético para monitoreo no invasivo de glucosa. Sin validación clínica anunciada.",
+            "Electromagnetic sensing research for non-invasive glucose monitoring. No clinical validation claimed."
+          ]
+        ],
+        [
+          [
+            "Presión intraarticular de rodilla",
+            "Intra-articular knee pressure"
+          ],
+          [
+            "Desarrollo de adquisición de señal a partir de sensores de presión existentes.",
+            "Development of signal acquisition using existing pressure sensors."
+          ]
+        ]
+      ]
+    }
+  ]
+}
