@@ -74,7 +74,7 @@ def directory():
     links = ''.join('<a href="familias.html#' + f['id'] + '">' + bi(f['name']) + ' <span aria-hidden="true">↗</span></a>' for f in DATA['families'] if f['id'] != 'sal')
     return ('<!-- family-directory:start --><section class="family-directory wrap" aria-label="Catálogo / Catalogue"><h2>'
             + bi(['Productos y servicios', 'Products & services']) + '</h2><div class="family-directory-links">' + links + '</div>'
-            + '<div class="family-development"><div><p class="small-label">' + bi(['En desarrollo', 'In development']) + '</p><h3>'
+            + '<div class="family-development"><div><p class="small-label">' + bi(['En desarrollo', 'Currently in R&D']) + '</p><h3>'
             + bi(['Nuevas ideas para salud.', 'New ideas for health.']) + '</h3><p>'
             + bi(['FieldDS y sensado de presión/carga: una línea joven, abierta a colaboraciones y validación experimental.', 'FieldDS and pressure/load sensing: an early programme open to collaboration and experimental validation.'])
             + '</p></div><a class="text-link" href="familias.html#sal">' + bi(['Conocé los proyectos', 'Explore the projects'])

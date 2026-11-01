@@ -20,11 +20,13 @@
   let lookup = null;
   const words = () => text[draftLanguage] || text.en;
   const countryName = (code, lang = draftLanguage) => {
+    if (code === 'FK') return 'Islas Malvinas/Falkland Islands';
     try { return new Intl.DisplayNames([lang === 'pt' ? 'pt-BR' : lang], {type:'region'}).of(code); }
     catch (_) { return countries.find(c => c.code === code)?.name || code; }
   };
   const marketName = (code, lang = draftLanguage) => app.config.markets.find(m => m.id === app.marketOf(code))?.names[lang] || '';
   function flag(code, className = '') {
+    if (code === 'FK') code = 'AR';
     const image = document.createElement('img');
     image.className = 'country-flag-image ' + className;
     image.src = new URL('assets/flags/' + code.toLowerCase() + '.svg', document.baseURI).href;

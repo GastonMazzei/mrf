@@ -36,9 +36,9 @@ def main():
         content = SPAN_ES.sub(translate_span, content)
         if '<base ' not in content:
             content = content.replace('<head>', '<head><base href="/">', 1)
-        content = re.sub(r'(src|href)="(site\.js|studio\.js|country\.js|regional-data\.js|prototype\.css)(?:\?[^" ]*)?"', r'\1="\2?v=8"', content)
+        content = re.sub(r'(src|href)="(site\.js|studio\.js|country\.js|regional-data\.js|prototype\.css)(?:\?[^" ]*)?"', r'\1="\2?v=9"', content)
         if 'regional-data.js' not in content:
-            content = content.replace('<script src="site.js?v=8"', '<script src="regional-data.js?v=8" defer></script><script src="site.js?v=8"', 1)
+            content = content.replace('<script src="site.js?v=9"', '<script src="regional-data.js?v=9" defer></script><script src="site.js?v=9"', 1)
         if 'data-set-lang="pt"' not in content:
             content = re.sub(r'(<button[^>]*data-set-lang="en"[^>]*>.*?</button>)', r'\1<span aria-hidden="true">/</span><button type="button" data-set-lang="pt" aria-pressed="false" lang="pt-BR" aria-label="Português">BR</button>', content, count=1)
         content = re.sub(r' data-name-pt="[^"]*"', '', content)
