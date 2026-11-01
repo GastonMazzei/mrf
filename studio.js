@@ -116,8 +116,15 @@
 (function () {
   const title = document.querySelector('[data-catalog-title]');
   if (!title) return;
-  const view = new URLSearchParams(location.search).get('view');
-  if (!['products', 'services'].includes(view)) return;
+  const params = new URLSearchParams(location.search);
+  const requested = params.get('view');
+  const view = ['products', 'services'].includes(requested) ? requested : (['pcb','firmware','med','local-ai'].includes(location.hash.slice(1).split('-option-')[0]) ? 'services' : 'products');
+  if (requested !== view) {const url=new URL(location.href);url.searchParams.set('view',view);history.replaceState(null,'',url);}
+  if(view==='products' && location.hash==='#rad'){const url=new URL(location.href);url.hash='sys';history.replaceState(null,'',url);}
+  document.body.dataset.titleEs='Marsupial RF — '+(view==='products'?'Productos':'Servicios');
+  document.body.dataset.titleEn='Marsupial RF — '+(view==='products'?'Products':'Services');
+  document.body.dataset.titlePt='Marsupial RF — '+(view==='products'?'Produtos':'Serviços');
+  document.title=document.body.dataset[document.body.dataset.lang==='es'?'titleEs':document.body.dataset.lang==='pt'?'titlePt':'titleEn'];
   title.querySelector('.lang-es').textContent = view === 'products' ? 'Productos' : 'Servicios';
   title.querySelector('.lang-en').textContent = view === 'products' ? 'Products' : 'Services';
   if (title.querySelector('.lang-pt')) title.querySelector('.lang-pt').textContent = view === 'products' ? 'Produtos' : 'Serviços';
@@ -136,6 +143,8 @@
   document.querySelectorAll('.new-nav a').forEach(a => {
     if (new URL(a.href).searchParams.get('view') === view) a.setAttribute('aria-current', 'page');
   });
+  window.MRF?.updateLinks();
+  if(location.hash)requestAnimationFrame(()=>document.getElementById(location.hash.slice(1))?.scrollIntoView());
 })();
 
 (function () {
@@ -147,6 +156,22 @@
   drawer.addEventListener('keydown',e=>{if(e.key==='Escape'){setOpen(false);toggle.focus();}});
   drawer.querySelectorAll('a').forEach(a=>a.addEventListener('click',e=>{setOpen(false);if(e.detail)a.blur();}));
   if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&matchMedia('(min-width: 851px)').matches){
-    drawer.classList.add('is-peeking');setTimeout(()=>drawer.classList.remove('is-peeking'),1700);
+    drawer.classList.add('is-peeking');setTimeout(()=>drawer.classList.remove('is-peeking'),550);
   }
+})();
+
+// One dismissible invitation per tab/session; no tracking or external calls.
+(function(){
+ if(!document.querySelector('[data-catalog-title]'))return;
+ const key='mrf-contact-shown';let shown=false;
+ try{shown=sessionStorage.getItem(key)==='1'}catch(_){}
+ if(shown)return;
+ const prompt=document.createElement('aside');prompt.className='contact-invitation';prompt.hidden=true;
+ const close=document.createElement('button'),copy=document.createElement('p'),link=document.createElement('a');
+ close.type='button';close.textContent='×';link.href='mailto:sales@marsupialrf.com';link.textContent='sales@marsupialrf.com';
+ const translate=()=>{const lang=document.body.dataset.lang;copy.textContent=lang==='es'?'¿Tenés preguntas? ¡Escribinos!':lang==='pt'?'Tem dúvidas? Envie um e-mail!':'Have questions? Send us an email!';close.setAttribute('aria-label',lang==='es'?'Cerrar':lang==='pt'?'Fechar':'Close');prompt.setAttribute('aria-label',copy.textContent)};
+ translate();window.addEventListener('mrf:language',translate);prompt.append(close,copy,link);document.body.append(prompt);
+ close.onclick=()=>{prompt.hidden=true};prompt.onkeydown=e=>{if(e.key==='Escape')prompt.hidden=true};
+ const onScroll=()=>{if(shown||scrollY<Math.max(600,innerHeight*.8)||document.querySelector('.country-modal[open]'))return;shown=true;prompt.hidden=false;try{sessionStorage.setItem(key,'1')}catch(_){}window.removeEventListener('scroll',onScroll)};
+ window.addEventListener('scroll',onScroll,{passive:true});
 })();

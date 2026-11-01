@@ -71,13 +71,13 @@ def showcase():
 
 
 def directory():
-    links = ''.join('<a href="familias.html#' + f['id'] + '">' + bi(f['name']) + ' <span aria-hidden="true">↗</span></a>' for f in DATA['families'] if f['id'] != 'sal')
+    links = ''.join('<a href="familias.html?view=' + ('services' if f['id'] in ['pcb','firmware','med','local-ai'] else 'products') + '#' + ('sys' if f['id']=='rad' else f['id']) + '">' + bi(f['name']) + ' <span aria-hidden="true">↗</span></a>' for f in DATA['families'] if f['id'] != 'sal')
     return ('<!-- family-directory:start --><section class="family-directory wrap" aria-label="Catálogo / Catalogue"><h2>'
             + bi(['Productos y servicios', 'Products & services']) + '</h2><div class="family-directory-links">' + links + '</div>'
             + '<div class="family-development"><div><p class="small-label">' + bi(['En desarrollo', 'Currently in R&D']) + '</p><h3>'
             + bi(['Nuevas ideas para salud.', 'New ideas for health.']) + '</h3><p>'
             + bi(['FieldDS y sensado de presión/carga: una línea joven, abierta a colaboraciones y validación experimental.', 'FieldDS and pressure/load sensing: an early programme open to collaboration and experimental validation.'])
-            + '</p></div><a class="text-link" href="familias.html#sal">' + bi(['Conocé los proyectos', 'Explore the projects'])
+            + '</p></div><a class="text-link" href="familias.html?view=products#sal">' + bi(['Conocé los proyectos', 'Explore the projects'])
             + ' ↗</a></div></section><!-- family-directory:end -->')
 
 
@@ -110,7 +110,7 @@ def detail_sections():
         media_class = ' has-option-media' if any(len(opt) > 2 for opt in f['options']) else ''
         portfolio = '<a class="text-link" href="' + f['portfolio'] + '">' + bi(['Ver un ejemplo de nuestro portfolio', 'See a portfolio example']) + ' ↗</a>' if f.get('portfolio') else ''
         tag = '<p class="small-label">' + bi(['Investigación y desarrollo', 'Research & development']) + '</p>' if f['id'] == 'sal' else ''
-        result.append('<section class="family-detail' + media_class + '" data-sections="' + ('products ' if f['id'] in ['rf','ant','sys','sdr','rad','sal','con'] else '') + ('services' if f['id'] in ['pcb','firmware','med','local-ai','rf','ant','sdr','rad','con'] else '') + '" id="' + f['id'] + '" aria-labelledby="detail-' + f['id'] + '"><div class="family-detail-intro">' + tag
+        result.append('<section class="family-detail' + media_class + '" data-sections="' + ('products ' if f['id'] in ['rf','ant','sys','sdr','sal','con'] else '') + ('services' if f['id'] in ['pcb','firmware','med','local-ai','rf','ant','sdr','rad','con'] else '') + '" id="' + f['id'] + '" aria-labelledby="detail-' + f['id'] + '"><div class="family-detail-intro">' + tag
                       + '<h2 id="detail-' + f['id'] + '">' + name + '</h2><p>' + intro + '</p>' + portfolio
                       + '</div><div class="family-options">' + options + '<a class="action action-primary" href="index.html#contact">'
                       + bi(['Consultar por esta familia', 'Discuss this family']) + ' ↗</a></div></section>')
@@ -128,6 +128,15 @@ def catalogue_navigation():
         groups.append('<li data-nav-family="' + f['id'] + '"><a class="catalog-family-link" href="#' + f['id'] + '">' + bi(f['name']) + '</a>' + subs + '</li>')
     return ('<aside class="catalog-drawer" aria-label="Catálogo / Catalogue"><button class="catalog-toggle" type="button" aria-expanded="false" aria-controls="catalog-tree">☰ <span>' + bi(['Catálogo','Catalogue']) + '</span></button>'
             + '<nav class="case-nav" id="catalog-tree"><div class="catalog-roots"><a href="familias.html?view=products">' + bi(['Productos','Products']) + '</a><a href="familias.html?view=services">' + bi(['Servicios','Services']) + '</a></div><ul>' + ''.join(groups) + '</ul></nav></aside>')
+
+
+def product_overview():
+    cards = []
+    for fid, indices in [('sys', range(4)), ('rf', range(4)), ('ant', range(4))]:
+        family = FAMILIES[fid]
+        bullets = ''.join('<li><a href="#' + fid + '-option-' + str(i+1) + '">' + bi(family['options'][i][0]) + '</a></li>' for i in indices)
+        cards.append('<article><h2><a href="#' + fid + '">' + bi(family['name']) + '</a></h2><ul>' + bullets + '</ul></article>')
+    return '<section class="product-overview" data-catalog-variant="products">' + ''.join(cards) + '</section>'
 
 
 def main():
@@ -149,12 +158,12 @@ def main():
     updated = re.sub(r'<nav class="new-nav".*?</nav>', lambda _: nav, updated, count=1, flags=re.S)
     path.write_text(updated)
     head = updated[:updated.index('<main id="main-content">')]
-    head = re.sub(r'<title>.*?</title>', '<title>Marsupial RF — Familias y opciones</title>', head)
-    head = re.sub(r'data-title-es="[^"]*"', 'data-title-es="Marsupial RF — Familias y opciones"', head)
-    head = re.sub(r'data-title-en="[^"]*"', 'data-title-en="Marsupial RF — Families &amp; options"', head)
+    head = re.sub(r'<title>.*?</title>', '<title>Marsupial RF — Productos y servicios</title>', head)
+    head = re.sub(r'data-title-es="[^"]*"', 'data-title-es="Marsupial RF — Productos y servicios"', head)
+    head = re.sub(r'data-title-en="[^"]*"', 'data-title-en="Marsupial RF — Products &amp; services"', head)
     footer = updated[updated.index('<footer class="new-footer">'):]
-    detail = '<main id="main-content" class="wrap"><section class="family-intro"><h1 data-catalog-title>' + bi(['Familias', 'Families']) + '</h1></section>'
-    detail += catalogue_navigation()
+    detail = '<main id="main-content" class="wrap"><section class="family-intro"><h1 data-catalog-title>' + bi(['Productos', 'Products']) + '</h1></section>'
+    detail += product_overview() + catalogue_navigation()
     detail += detail_sections() + '</main>'
     (ROOT / 'familias.html').write_text(head + detail + footer)
 
