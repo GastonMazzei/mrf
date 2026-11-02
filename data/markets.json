@@ -1,15 +1,15 @@
 {
   "version": 3,
   "default": "global",
-  "priority_status": "owner_voice_baseline_20261031",
-  "priority_basis": "Four products and four services dictated by the owner in the 19:11–19:34 voice monologue. Country-specific reordering remains editable.",
+  "priority_status": "owner_review_20261102",
+  "priority_basis": "Owner order: passive radar, microwave equipment, multichannel coherent SDRs, cellphone locator solutions.",
   "country_mapping_note": "Commercial grouping, not a political classification. Mexico and Brazil are LATAM; US and Canada together; Europe includes non-EU countries. Russia/Cyprus in Europe, Turkey/Caucasus in Asia. Oceania and unspecified territories use International.",
   "default_featured": {
     "products": [
       "rad",
       "rf",
-      "sys",
-      "sdr"
+      "sdr",
+      "sys"
     ],
     "services": [
       "pcb",
@@ -288,8 +288,8 @@
         "products": [
           "rad",
           "rf",
-          "sys",
-          "sdr"
+          "sdr",
+          "sys"
         ],
         "services": [
           "pcb",
@@ -310,8 +310,8 @@
         "products": [
           "rad",
           "rf",
-          "sys",
-          "sdr"
+          "sdr",
+          "sys"
         ],
         "services": [
           "pcb",
@@ -332,8 +332,8 @@
         "products": [
           "rad",
           "rf",
-          "sys",
-          "sdr"
+          "sdr",
+          "sys"
         ],
         "services": [
           "pcb",
@@ -354,8 +354,8 @@
         "products": [
           "rad",
           "rf",
-          "sys",
-          "sdr"
+          "sdr",
+          "sys"
         ],
         "services": [
           "pcb",
@@ -376,8 +376,8 @@
         "products": [
           "rad",
           "rf",
-          "sys",
-          "sdr"
+          "sdr",
+          "sys"
         ],
         "services": [
           "pcb",
@@ -398,8 +398,8 @@
         "products": [
           "rad",
           "rf",
-          "sys",
-          "sdr"
+          "sdr",
+          "sys"
         ],
         "services": [
           "pcb",

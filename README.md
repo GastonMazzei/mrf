@@ -6,6 +6,8 @@ Static English / Spanish / Brazilian Portuguese website. HTML, CSS and vanilla J
 
 Edit `data/families.json` for product and service descriptions, `data/markets.json` for regional ordering, and `data/pt-BR.json` for Portuguese translations. Run `python3 scripts/build_families.py` followed by `python3 scripts/build_regions.py` after changing those sources; commit the generated pages as well. The site serves `/es/`, `/en/`, and `/br/` editions for LATAM, US/Canada, Europe, Africa, Asia, and the global fallback.
 
+`hat-usb3.html` is the Dual-controller True 2xUSB-3 Xpansion HAT product page and participates in the same regional build. Its A2 CAD renders come from `Marsupial-RF/pcbs-rpi5-dual-usb3`, commit `6901b6312bab1575cd77fa575b36142ee783b9a2`, paths `pcb/ai/rev-a/review/hat2-iso.png` and `hat2-top.png`. Use the owner-approved product name and public copy. Keep internal procurement reports and private measurements outside this website.
+
 `country.js` suggests a country using a client-side IP lookup, offers manual selection if it fails, and saves the visitor's choice. Location never prevents visiting another regional edition. The country dialog can be reviewed with `?choose-country=1`. `familias.html` contains the catalogue and three-level navigation; `portfolio.html` contains the case studies. `prototype.css` and `studio.css` define the current layout.
 
 French, German, Italian and Russian translations, several requested service photos, and further catalogue refinements remain pending. Do not present placeholder diagrams or conceptual renders as manufactured hardware or measured results. Internal review galleries and source-document identifiers are excluded from publication.
