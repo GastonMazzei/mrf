@@ -23,7 +23,7 @@ def family_image(f, kind='products'):
                           + html.escape(item['src'], quote=True) + '" alt="'
                           + html.escape(item['alt'][0], quote=True) + '" data-alt-es="'
                           + html.escape(item['alt'][0], quote=True) + '" data-alt-en="'
-                          + html.escape(item['alt'][1], quote=True) + '" loading="lazy"></figure>' for item in media)
+                          + html.escape(item['alt'][1], quote=True) + '" loading="lazy">' + ('<figcaption>' + bi(item['caption']) + '</figcaption>' if item.get('caption') else '') + '</figure>' for item in media)
                 + '</div>')
     if kind == 'services':
         if f.get('service_flow'):

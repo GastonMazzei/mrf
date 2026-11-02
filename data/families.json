@@ -619,7 +619,18 @@
           [
             "Diseño de geometría, metalizado e integración según banda, masa, polarización y montaje.",
             "Geometry, metallization and integration design for the required band, mass, polarization and mounting."
-          ]
+          ],
+          {
+            "src": "assets/antenna-freecad-revb.png",
+            "alt": [
+              "Antena impresa: exterior y sección del modelo FreeCAD Rev B.",
+              "Printed antenna: exterior and section of our Rev B FreeCAD model."
+            ],
+            "caption": [
+              "Diseño propio en FreeCAD · Currently in R&D",
+              "Our FreeCAD design · Currently in R&D"
+            ]
+          }
         ],
         [
           [
@@ -651,7 +662,18 @@
           [
             "Desarrollos de doble polarización o banda ancha, con requisitos y ensayos definidos por proyecto.",
             "Dual-polarization or broadband developments, with project-specific requirements and testing."
-          ]
+          ],
+          {
+            "src": "assets/portfolio/patch-array-built.webp",
+            "alt": [
+              "Arreglo de antenas construido en nuestro taller.",
+              "Antenna array built in our workshop."
+            ],
+            "caption": [
+              "Arreglo construido · desarrollo propio",
+              "Built antenna array · our development"
+            ]
+          }
         ],
         [
           [
@@ -797,8 +819,8 @@
       ],
       "visual": "CÁMARAS Y SENSORES → SOFTWARE Y FIRMWARE → MEDICIÓN Y CONTROL",
       "intro": [
-        "Desarrollos para adquirir datos, procesarlos y controlar equipos. El alcance y las pruebas se definen con el proceso del cliente.",
-        "Development for data acquisition, processing and device control. Scope and tests are defined around the client’s process."
+        "Nuestro equipo combina diez años de experiencia en software y sistemas embebidos para sistemas críticos.",
+        "Our team combines ten years of software and embedded systems experience for critical systems."
       ],
       "options": [
         [
@@ -881,8 +903,18 @@
         "Software and Firmware Development"
       ],
       "service_description": [
-        "Más de diez años de experiencia en software y sistemas embebidos, incluidos proyectos satelitales. Precio competitivo y formación en computación.",
-        "Over ten years of software and embedded-systems experience, including satellite projects. Competitive pricing and computer-science expertise."
+        "Nuestro equipo combina diez años de experiencia en software y sistemas embebidos para sistemas críticos.",
+        "Our team combines ten years of software and embedded systems experience for critical systems."
+      ],
+      "service_media": [
+        {
+          "src": "assets/operations/team-electronics-lab.jpg",
+          "alt": [
+            "Nuestro equipo trabajando en el laboratorio de electrónica.",
+            "Our team working in the electronics lab."
+          ],
+          "class": "operational"
+        }
       ]
     },
     {
@@ -956,8 +988,69 @@
         "Industrial Automation"
       ],
       "service_description": [
-        "Monitoreo cuantitativo de procesos industriales e Industria 4.0.",
-        "Quantitative monitoring of industrial processes and Industry 4.0."
+        "Monitoreo de procesos, cámaras térmicas para tu perímetro y conectividad rural.",
+        "Process monitoring, thermal cameras for your perimeter and rural connectivity."
+      ],
+      "service_media": [
+        {
+          "src": "assets/operations/rural-perimeter-concept.jpg",
+          "alt": [
+            "Ilustración de cámara perimetral, antena y conectividad en el campo.",
+            "Illustration of a perimeter camera, antenna and rural connectivity."
+          ],
+          "class": "concept",
+          "caption": [
+            "Ilustración de aplicación",
+            "Application illustration"
+          ]
+        }
+      ],
+      "service_intro": [
+        "Monitoreo de procesos, cámaras térmicas para tu perímetro y conectividad rural.",
+        "Process monitoring, thermal cameras for your perimeter and rural connectivity."
+      ],
+      "service_options": [
+        [
+          [
+            "Protegé tu perímetro",
+            "Secure your perimeter"
+          ],
+          [
+            "Integración de cámaras térmicas, monitoreo y alertas para las necesidades de tu sitio.",
+            "Thermal-camera integration, monitoring and alerts for your site’s needs."
+          ],
+          {
+            "src": "assets/operations/rural-perimeter-concept.jpg",
+            "alt": [
+              "Concepto ilustrativo de seguridad perimetral y conectividad rural.",
+              "Illustrative concept for perimeter security and rural connectivity."
+            ],
+            "caption": [
+              "Ilustración de aplicación",
+              "Application illustration"
+            ]
+          }
+        ],
+        [
+          [
+            "Conectividad rural",
+            "Rural connectivity"
+          ],
+          [
+            "Enlaces y adquisición de datos para campos, equipos y sitios remotos.",
+            "Links and data acquisition for farms, equipment and remote sites."
+          ]
+        ],
+        [
+          [
+            "Monitoreo de procesos",
+            "Process monitoring"
+          ],
+          [
+            "Sensores, registro de variables e integración con los sistemas de operación existentes.",
+            "Sensors, process logging and integration with existing operational systems."
+          ]
+        ]
       ]
     },
     {
