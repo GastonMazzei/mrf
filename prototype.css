@@ -160,7 +160,7 @@ main.wrap>.market-strip{width:100%;padding-inline:0}
 .real-media{position:relative}.real-media figcaption{position:absolute;bottom:6px;left:6px;padding:3px 7px;background:rgba(12,26,39,.8);color:white;font-size:11px;border-radius:4px}
 
 /* Product photography and the passive-radar story. */
-.institutional-notice{font-size:11px;line-height:1.55;color:#5b6974;margin:6px 0 10px;max-width:120ch}
+.institutional-notice{font-size:10px;line-height:1.5;color:#5b6974;margin:6px 0 10px;width:100%;max-width:none}
 .institutional-notice strong{font-size:10px;letter-spacing:.06em;margin-right:7px}
 .family-slide-link{position:absolute;inset:0;z-index:3;border-radius:inherit}
 .family-slide-link:focus-visible{outline:3px solid #21637a;outline-offset:-6px}
@@ -190,3 +190,29 @@ main.wrap>.market-strip{width:100%;padding-inline:0}
 html:has(.product-story[open]){overflow:hidden}
 @media(max-width:1000px){.product-story{width:75vw}.studio .option-gallery .option-photo img{height:250px}}
 @media(max-width:600px){.product-story{width:calc(100vw - 24px);max-height:92vh;border-radius:14px}.story-content{padding:35px 20px 26px}.story-content h2{font-size:27px}.story-content p{font-size:15px}.quick-case strong{min-height:0}.studio .option-gallery .option-photo img{height:225px}.studio .custom-requirements{border-radius:22px;padding:18px}.institutional-notice{font-size:10px;line-height:1.5}}
+
+/* Country-specific services follow the selected country, not the whole region. */
+body:not([data-country="AR"]) [data-countries~="AR"]{display:none!important}
+.studio .option-wide-media{grid-template-columns:1fr}
+.studio .option-wide-media>.option-photo{max-width:1050px;width:100%;margin:0 auto}
+.studio .option-wide-media>.option-photo img{height:auto;max-height:520px;aspect-ratio:auto}
+.studio .option-wide-media .family-option-copy{padding:0 20px 12px}
+.hat-news{position:fixed;z-index:75;right:0;top:125px;width:min(540px,calc(100vw - 48px));transform:translateX(100%);transition:transform .25s ease;filter:drop-shadow(0 10px 20px #172f4e35)}
+.hat-news.is-open{transform:translateX(0)}
+.hat-news-tab{position:absolute;right:100%;top:24px;min-height:145px;width:40px;writing-mode:vertical-rl;transform:rotate(180deg);border:0;border-radius:0 10px 10px 0;background:#ffd958;color:#12283e;font:600 12px/1.5 var(--mono);padding:14px 9px;cursor:pointer}
+.hat-news-panel{max-height:calc(100dvh - 145px);overflow-y:auto;overscroll-behavior:contain;padding:24px 28px 30px;border:1px solid #bfd1df;border-right:0;border-radius:18px 0 0 18px;background:#fff;color:#243844}
+.hat-news-eyebrow{font:600 12px/1.5 var(--mono);letter-spacing:.04em;color:#1260a5;padding-right:22px;margin:0 0 10px}
+.hat-news-panel h2{font-size:27px;line-height:1.15;margin:0 0 16px;padding-right:12px}
+.hat-news-panel>p,.hat-news-stage-inner>p,.hat-news-panel li{font-size:14px;line-height:1.55}
+.hat-news-panel .hat-news-subtitle{font-weight:600;margin:0 0 14px}
+.hat-news.has-sequence .hat-news-stage{display:grid;grid-template-rows:0fr;opacity:0;visibility:hidden;transition:grid-template-rows .2s ease,opacity .2s ease}
+.hat-news.has-sequence .hat-news-stage.is-visible{grid-template-rows:1fr;opacity:1;visibility:visible}
+.hat-news-stage-inner{min-height:0;overflow:hidden}
+.hat-news-panel ul{padding-left:20px;margin:15px 0 22px}.hat-news-panel li{margin:8px 0}
+.hat-news-panel .action{font-size:14px;white-space:normal;line-height:1.45}
+.hat-news-image{margin:10px 0 16px}.hat-news-image img{display:block;width:100%;height:auto}
+.hat-news-callout{padding:13px 15px;border-radius:10px;background:#ffe47b;font-weight:700;color:#172c40}
+.hat-news-close{float:right;position:sticky;top:0;z-index:1;width:30px;height:30px;border:1px solid #d1dce5;border-radius:50%;background:#fff;color:#42586e;font:24px/1 sans-serif;cursor:pointer;margin:-10px -15px 0 0}
+.hat-news button:focus-visible{outline:3px solid #1453a3;outline-offset:3px}
+@media(max-width:600px){.hat-news{top:120px}.hat-news-panel{padding:20px 18px 24px;max-height:calc(100dvh - 140px)}.hat-news-panel h2{font-size:23px}.hat-news-panel>p,.hat-news-stage-inner>p,.hat-news-panel li{font-size:13px}}
+@media(prefers-reduced-motion:reduce){.hat-news,.hat-news.has-sequence .hat-news-stage{transition:none}}

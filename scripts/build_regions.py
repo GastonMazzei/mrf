@@ -36,16 +36,16 @@ def main():
         content = SPAN_ES.sub(translate_span, content)
         if '<base ' not in content:
             content = content.replace('<head>', '<head><base href="/">', 1)
-        content = re.sub(r'(src|href)="(site\.js|studio\.js|country\.js|regional-data\.js|prototype\.css)(?:\?[^" ]*)?"', r'\1="\2?v=13"', content)
+        content = re.sub(r'(src|href)="(site\.js|studio\.js|country\.js|regional-data\.js|prototype\.css)(?:\?[^" ]*)?"', r'\1="\2?v=15"', content)
         if 'regional-data.js' not in content:
-            content = content.replace('<script src="site.js?v=13"', '<script src="regional-data.js?v=13" defer></script><script src="site.js?v=13"', 1)
+            content = content.replace('<script src="site.js?v=15"', '<script src="regional-data.js?v=15" defer></script><script src="site.js?v=15"', 1)
         if 'data-set-lang="pt"' not in content:
             content = re.sub(r'(<button[^>]*data-set-lang="en"[^>]*>.*?</button>)', r'\1<span aria-hidden="true">/</span><button type="button" data-set-lang="pt" aria-pressed="false" lang="pt-BR" aria-label="Português">BR</button>', content, count=1)
         content = re.sub(r' data-name-pt="[^"]*"', '', content)
         content = re.sub(r'data-name-es="([^"]*)"', lambda m: m[0] + ' data-name-pt="' + html.escape(translations.get(html.unescape(m[1]), html.unescape(m[1])), quote=True) + '"', content)
         content = re.sub(r' data-alt-pt="[^"]*"', '', content)
         content = re.sub(r'data-alt-es="([^"]*)"', lambda m: m[0] + ' data-alt-pt="' + html.escape(translations.get(html.unescape(m[1]), html.unescape(m[1])), quote=True) + '"', content)
-        title_pt = {'index.html': 'Marsupial RF — Eletrônica, antenas e sistemas RF', 'familias.html': 'Marsupial RF — Produtos e serviços', 'portfolio.html': 'Marsupial RF — Portfolio', 'hat-usb3.html': 'Marsupial RF — HAT com dois controladores USB 3.0 para Raspberry Pi 5'}[name]
+        title_pt = {'index.html': 'Marsupial RF — Eletrônica, antenas e sistemas RF', 'familias.html': 'Marsupial RF — Produtos e serviços', 'portfolio.html': 'Marsupial RF — Portfolio', 'hat-usb3.html': 'Marsupial RF — Dual-controller True 2xUSB-3 Xpansion HAT para Raspberry Pi 5'}[name]
         content = re.sub(r' data-title-pt="[^"]*"', '', content)
         content = content.replace('<body ', '<body data-title-pt="' + title_pt + '" ', 1)
         (ROOT/name).write_text(content)

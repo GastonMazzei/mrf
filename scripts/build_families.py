@@ -14,6 +14,10 @@ def bi(pair):
     return '<span class="lang lang-es">' + html.escape(pair[0]) + '</span><span class="lang lang-en">' + html.escape(pair[1]) + '</span>'
 
 
+def country_attrs(family):
+    return ' data-countries="' + ' '.join(family['countries']) + '"' if family.get('countries') else ''
+
+
 def family_image(f, kind='products'):
     media = f.get('service_media') if kind == 'services' else f.get('preview_media')
     if media:
@@ -52,7 +56,7 @@ def carousel(kind, title, description):
         f = FAMILIES[fid]
         target = f.get('preview_target', 'familias.html?view=products#' + ('sys' if fid == 'rad' else fid)) if kind == 'products' else 'familias.html?view=services#' + fid
         story = ' data-open-story="passive-radar" aria-haspopup="dialog"' if kind == 'products' and fid == 'rad' else ''
-        parts.append('<article class="family-slide"' + (' hidden data-default-hidden' if fid not in defaults else '') + ' data-family="' + fid + '" data-name-es="' + html.escape(f['name'][0], quote=True)
+        parts.append('<article class="family-slide"' + country_attrs(f) + (' hidden data-default-hidden' if fid not in defaults else '') + ' data-family="' + fid + '" data-name-es="' + html.escape(f['name'][0], quote=True)
                      + '" data-name-en="' + html.escape(f['name'][1], quote=True) + '" aria-labelledby="' + kind + '-' + fid + '-title">'
                      + '<div class="family-visual" aria-hidden="true">' + family_image(f, kind) + '</div>'
                      + '<div class="family-card-copy"><h3 id="' + kind + '-' + fid + '-title">' + bi(f.get('preview_title', f['name']) if kind == 'products' else f.get('service_title', f['name'])) + '</h3>'
@@ -68,10 +72,25 @@ def carousel(kind, title, description):
 def showcase():
     return ('<!-- family-showcase:start --><div class="wrap"><section class="family-intro" aria-labelledby="hero-title"><h1 id="hero-title" class="visually-hidden">'
             + bi(['Catálogo', 'Catalogue']) + '</h1></section><p class="institutional-notice"><strong>DISCLAIMER</strong> ' + bi(DATA['institutional_notice'])
-            + ' <a href="https://www.ecfr.gov/current/title-22/chapter-I/subchapter-M/part-121/section-121.1#p-121.1(XI)(a)(3)(xxvii)">22 CFR 121.1 · XI(a)(3)(xxvii)</a></p><div class="family-showcase">'
+            + '</p><div class="family-showcase">'
             + carousel('products', ['Productos', 'Products'], ['Equipos, módulos y plataformas. Explorá cada familia.', 'Equipment, modules and platforms. Explore each family.'])
             + carousel('services', ['Servicios', 'Services'], ['Desde una consulta puntual hasta un desarrollo completo.', 'From a focused consultation to a complete development.'])
-            + '</div></div>' + story_dialog() + '<!-- family-showcase:end -->')
+            + '</div></div>' + story_dialog() + hat_news_drawer() + '<!-- family-showcase:end -->')
+
+
+def hat_news_drawer():
+    news = DATA['hat_news']
+    return ('<aside class="hat-news" aria-label="USB3 HAT"><button class="hat-news-tab" type="button" aria-expanded="false" aria-controls="hat-news-panel">'
+            + bi(news['tab']) + '</button><section class="hat-news-panel" id="hat-news-panel" aria-labelledby="hat-news-title" aria-hidden="true" inert>'
+            + '<button class="hat-news-close" type="button"><span aria-hidden="true">×</span><span class="visually-hidden">' + bi(news['close']) + '</span></button>'
+            + '<p class="hat-news-eyebrow">' + bi(news['eyebrow']) + '</p><h2 id="hat-news-title">' + bi(news['title']) + '</h2>'
+            + '<p class="hat-news-subtitle">' + bi(news['subtitle']) + '</p>'
+            + '<div class="hat-news-stage" data-news-stage="diagram"><div class="hat-news-stage-inner">'
+            + image_figure(news['media'], 'hat-news-image').replace('loading="lazy"', 'loading="eager"').replace('height="700"', 'height="500"') + '</div></div>'
+            + '<div class="hat-news-stage" data-news-stage="details"><div class="hat-news-stage-inner">'
+            + '<p class="hat-news-callout">' + bi(news['callout']) + '</p><p>' + bi(news['description']) + '</p>'
+            + '<ul>' + ''.join('<li>' + bi(item) + '</li>' for item in news['uses']) + '</ul><a class="action action-primary" href="hat-usb3.html">'
+            + bi(['Conocé la Dual-controller True 2xUSB-3 Xpansion HAT', 'Explore the Dual-controller True 2xUSB-3 Xpansion HAT']) + ' ↗</a></div></div></section></aside>')
 
 
 def image_figure(media, css='option-photo'):
@@ -100,7 +119,7 @@ def story_dialog():
 
 
 def directory():
-    links = ''.join('<a href="familias.html?view=' + ('services' if f['id'] in ['pcb','firmware','med','local-ai'] else 'products') + '#' + ('sys' if f['id']=='rad' else f['id']) + '">' + bi(f['name']) + ' <span aria-hidden="true">↗</span></a>' for f in DATA['families'] if f['id'] != 'sal')
+    links = ''.join('<a' + country_attrs(f) + ' href="familias.html?view=' + ('services' if f['id'] in ['pcb','firmware','med','local-ai'] else 'products') + '#' + ('sys' if f['id']=='rad' else f['id']) + '">' + bi(f['name']) + ' <span aria-hidden="true">↗</span></a>' for f in DATA['families'] if f['id'] != 'sal')
     return ('<!-- family-directory:start --><section class="family-directory wrap" aria-label="Catálogo / Catalogue"><h2>'
             + bi(['Productos y servicios', 'Products & services']) + '</h2><div class="family-directory-links">' + links + '</div>'
             + '<div class="family-development"><div><p class="small-label">' + bi(['Foco actual de I+D', 'Current R&D Focus']) + '</p><h3>'
@@ -126,7 +145,7 @@ def option_markup(opt, anchor=None):
     figure = ''.join(image_figure(m) for m in images)
     if len(images) > 1:
         figure = '<div class="option-gallery">' + figure + '</div>'
-    return '<article class="family-option family-option-illustrated"' + ident + '>' + figure + copy + '</article>'
+    return '<article class="family-option family-option-illustrated' + (' option-wide-media' if media.get('wide') else '') + '"' + ident + '>' + figure + copy + '</article>'
 
 
 def detail_sections():
@@ -143,7 +162,7 @@ def detail_sections():
         media_class = ' has-option-media' if any(len(opt) > 2 for opt in f['options']) else ''
         portfolio = '<a class="text-link" href="' + f['portfolio'] + '">' + bi(['Ver un ejemplo de nuestro portfolio', 'See a portfolio example']) + ' ↗</a>' if f.get('portfolio') else ''
         tag = '<p class="small-label">' + bi(['Investigación y desarrollo', 'Research & development']) + '</p>' if f['id'] == 'sal' else ''
-        result.append('<section class="family-detail' + media_class + '" data-sections="' + ('products ' if f['id'] in ['rf','ant','sys','sdr','sal','con'] else '') + ('services' if f['id'] in ['pcb','firmware','med','local-ai','rf','ant','sdr','rad','con'] else '') + '" id="' + f['id'] + '" aria-labelledby="detail-' + f['id'] + '"><div class="family-detail-intro">' + tag
+        result.append('<section class="family-detail' + media_class + '"' + country_attrs(f) + ' data-sections="' + ('products ' if f['id'] in ['rf','ant','sys','sdr','sal','con'] else '') + ('services' if f['id'] in ['pcb','firmware','med','local-ai','rf','ant','sdr','rad','con'] else '') + '" id="' + f['id'] + '" aria-labelledby="detail-' + f['id'] + '"><div class="family-detail-intro">' + tag
                       + '<h2 id="detail-' + f['id'] + '">' + name + '</h2>' + ('<p>' + intro + '</p>' if intro else '') + portfolio
                       + '</div><div class="family-options">' + options + '<a class="action action-primary" href="index.html#contact">'
                       + bi(['Consultar por esta familia', 'Discuss this family']) + ' ↗</a></div></section>')
@@ -158,7 +177,7 @@ def catalogue_navigation():
             subs='<ul data-catalog-variant="products">' + subs + '</ul><ul data-catalog-variant="services" hidden>' + ''.join('<li><a href="#' + f['id'] + '-service-' + str(i+1) + '">' + bi(opt[0]) + '</a></li>' for i,opt in enumerate(f['service_options'])) + '</ul>'
         else:
             subs='<ul>' + subs + '</ul>'
-        groups.append('<li data-nav-family="' + f['id'] + '"><a class="catalog-family-link" href="#' + f['id'] + '">' + bi(f['name']) + '</a>' + subs + '</li>')
+        groups.append('<li' + country_attrs(f) + ' data-nav-family="' + f['id'] + '"><a class="catalog-family-link" href="#' + f['id'] + '">' + bi(f['name']) + '</a>' + subs + '</li>')
     return ('<aside class="catalog-drawer" aria-label="Catálogo / Catalogue"><button class="catalog-toggle" type="button" aria-expanded="false" aria-controls="catalog-tree">☰ <span>' + bi(['Catálogo','Catalogue']) + '</span></button>'
             + '<nav class="case-nav" id="catalog-tree"><div class="catalog-roots"><a href="familias.html?view=products">' + bi(['Productos','Products']) + '</a><a href="familias.html?view=services">' + bi(['Servicios','Services']) + '</a></div><ul>' + ''.join(groups) + '</ul></nav></aside>')
 

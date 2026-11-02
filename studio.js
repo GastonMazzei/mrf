@@ -113,6 +113,73 @@
   }
 })();
 
+// A brief homepage preview leaves an accessible tab for reopening the news.
+(function () {
+  const drawer = document.querySelector('.hat-news');
+  if (!drawer) return;
+  const tab = drawer.querySelector('.hat-news-tab');
+  const panel = drawer.querySelector('.hat-news-panel');
+  const close = drawer.querySelector('.hat-news-close');
+  const diagram = drawer.querySelector('[data-news-stage="diagram"]');
+  const details = drawer.querySelector('[data-news-stage="details"]');
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  const openDelay = 1600;
+  const diagramDelay = 500;
+  const detailsDelay = 1300;
+  const readingTime = 2000;
+  let timer;
+  let openTimer;
+  let stageTimers = [];
+  let previewed = false;
+  let pageLoaded = document.readyState === 'complete';
+  drawer.classList.add('has-sequence');
+  const reveal = (stage, visible) => {
+    stage.classList.toggle('is-visible', visible);
+    stage.inert = !visible;
+    stage.setAttribute('aria-hidden', String(!visible));
+  };
+  const setOpen = (open, returnFocus = false) => {
+    clearTimeout(timer);
+    stageTimers.forEach(clearTimeout);
+    stageTimers = [];
+    drawer.classList.toggle('is-open', open);
+    tab.setAttribute('aria-expanded', String(open));
+    panel.inert = !open;
+    panel.setAttribute('aria-hidden', String(!open));
+    if (open) {
+      panel.scrollTop = 0;
+      [diagram, details].forEach(stage => reveal(stage, reducedMotion.matches));
+      if (!reducedMotion.matches) {
+        stageTimers.push(setTimeout(() => reveal(diagram, true), diagramDelay));
+        stageTimers.push(setTimeout(() => reveal(details, true), detailsDelay));
+      }
+    } else [diagram, details].forEach(stage => reveal(stage, false));
+    if (returnFocus) tab.focus({preventScroll:true});
+  };
+  tab.addEventListener('click', () => { previewed = true; setOpen(!drawer.classList.contains('is-open')); });
+  close.addEventListener('click', () => setOpen(false, true));
+  drawer.addEventListener('keydown', event => { if (event.key === 'Escape') setOpen(false, true); });
+  panel.addEventListener('pointerdown', () => clearTimeout(timer));
+  panel.addEventListener('focusin', () => clearTimeout(timer));
+  const preview = () => {
+    if (previewed || document.hidden || document.querySelector('dialog[open]')) return;
+    previewed = true;
+    if (reducedMotion.matches) return;
+    setOpen(true);
+    // Leave the complete message visible before folding it back into the tab.
+    timer = setTimeout(() => setOpen(false), detailsDelay + readingTime);
+  };
+  const schedulePreview = () => {
+    clearTimeout(openTimer);
+    if (!pageLoaded || previewed || document.hidden || document.querySelector('dialog[open]')) return;
+    openTimer = setTimeout(preview, openDelay);
+  };
+  if (pageLoaded) schedulePreview();
+  else window.addEventListener('load', () => { pageLoaded = true; schedulePreview(); }, {once:true});
+  document.addEventListener('close', schedulePreview, true);
+  document.addEventListener('visibilitychange', schedulePreview);
+})();
+
 // The product story is a dialog; its link still works without JavaScript.
 (function () {
   document.querySelectorAll('[data-open-story]').forEach(link => {
