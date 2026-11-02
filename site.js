@@ -5,7 +5,8 @@
   const params = new URLSearchParams(location.search);
   const route = location.pathname.match(/^\/(es|en|br)\/([^/]+)\//);
   const file = location.pathname.split('/').pop() || 'index.html';
-  const regional = !!config && ['index.html', 'familias.html', 'portfolio.html'].includes(file);
+  const regionalPages = ['index.html', 'familias.html', 'portfolio.html', 'hat-usb3.html'];
+  const regional = !!config && regionalPages.includes(file);
   const validCountry = code => !!config?.country_market[code];
   const marketOf = code => config?.country_market[code] || 'global';
   const validMarket = id => config?.markets.some(m => m.id === id);
@@ -39,7 +40,7 @@
       if (!raw) return;
       link.dataset.originalHref = raw;
       const url = new URL(raw, raw.startsWith('#') ? location.href : document.baseURI);
-      if (url.origin !== location.origin || !['', 'index.html', 'familias.html', 'portfolio.html', 'products.html'].includes(url.pathname.split('/').pop())) return;
+      if (url.origin !== location.origin || !['', 'products.html', ...regionalPages].includes(url.pathname.split('/').pop())) return;
       link.href = localURL(url);
     });
   }

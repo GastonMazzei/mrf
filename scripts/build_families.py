@@ -85,8 +85,11 @@ def option_markup(opt, anchor=None):
     ident = ' id="' + anchor + '"' if anchor else ''
     if len(opt) < 3:
         return '<div class="family-option"' + ident + '><h3>' + bi(opt[0]) + '</h3><p>' + bi(opt[1]) + '</p></div>'
-    copy = '<div class="family-option-copy"><h3>' + bi(opt[0]) + '</h3><p>' + bi(opt[1]) + '</p></div>'
+    copy = '<div class="family-option-copy"><h3>' + bi(opt[0]) + '</h3><p>' + bi(opt[1]) + '</p>'
     media = opt[2]
+    if media.get('href'):
+        copy += '<a class="text-link" href="' + html.escape(media['href'], quote=True) + '">' + bi(media['link_label']) + ' ↗</a>'
+    copy += '</div>'
     image = ('<img src="' + html.escape(media['src'], quote=True) + '" alt="'
              + html.escape(media['alt'][0], quote=True) + '" data-alt-es="'
              + html.escape(media['alt'][0], quote=True) + '" data-alt-en="'

@@ -258,6 +258,32 @@
             "Alineación temporal, referencia de reloj y calibración entre canales según el alcance.",
             "Timing alignment, clock references and channel calibration as scoped."
           ]
+        ],
+        [
+          [
+            "Raspberry Pi 5 · Dual USB3 HAT",
+            "Raspberry Pi 5 · Dual USB3 HAT"
+          ],
+          [
+            "Dos controladores USB3 independientes en una HAT de diseño propio, con enlace PCIe Gen3 ×1 como objetivo. 85 × 56 mm, dos puertos USB-A apilados y alimentación desde GPIO. Actualmente en I+D; validación de prototipo pendiente.",
+            "Two independent USB3 host controllers in our own HAT design, targeting a PCIe Gen3 ×1 uplink. 85 × 56 mm, stacked dual USB-A ports and GPIO power. Currently in R&D; prototype validation pending."
+          ],
+          {
+            "src": "assets/hat-usb3/hat2-iso.png",
+            "alt": [
+              "Render del diseño A2 de Marsupial RF: placa con dos controladores USB3 y conector USB-A doble.",
+              "Render of the Marsupial RF A2 design: board with two USB3 controllers and a stacked dual USB-A connector."
+            ],
+            "caption": [
+              "Render CAD A2 · Diseño propio · Prototipo pendiente de validación.",
+              "A2 CAD render · Designed by Marsupial RF · Prototype validation pending."
+            ],
+            "href": "hat-usb3.html",
+            "link_label": [
+              "Ver la Dual USB3 HAT",
+              "Explore the Dual USB3 HAT"
+            ]
+          }
         ]
       ],
       "preview_title": [
@@ -265,8 +291,8 @@
         "Price Competitive Multi-channel Coherent SDRs"
       ],
       "preview_description": [
-        "Turtle SDR: plataforma modular, escalable y de precio competitivo para proyectos coherentes multicanal y de banda ultraancha.",
-        "Turtle SDR: a scalable, cost-efficient modular platform for many-channel coherent and ultra-wideband projects."
+        "Turtle SDR y nuestra HAT Dual USB3 para Raspberry Pi 5: integración compacta para adquisición multicanal. HAT actualmente en I+D.",
+        "Turtle SDR and our Dual USB3 HAT for Raspberry Pi 5: compact integration for multichannel acquisition. HAT currently in R&D."
       ],
       "preview_media": [
         {
@@ -276,6 +302,17 @@
             "Stacked multichannel SDRs powered on at our bench."
           ],
           "class": "operational"
+        },
+        {
+          "src": "assets/hat-usb3/hat2-iso.png",
+          "alt": [
+            "Render del diseño A2 de Marsupial RF: placa con dos controladores USB3 y conector USB-A doble.",
+            "Render of the Marsupial RF A2 design: board with two USB3 controllers and a stacked dual USB-A connector."
+          ],
+          "caption": [
+            "CAD A2 · Actualmente en I+D",
+            "A2 CAD · Currently in R&D"
+          ]
         }
       ]
     },
