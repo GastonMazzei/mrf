@@ -113,6 +113,29 @@
   }
 })();
 
+// The product story is a dialog; its link still works without JavaScript.
+(function () {
+  document.querySelectorAll('[data-open-story]').forEach(link => {
+    const dialog = document.getElementById(link.dataset.openStory);
+    if (!dialog || typeof dialog.showModal !== 'function') return;
+    link.addEventListener('click', event => {
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      dialog.showModal();
+      dialog.scrollTop = 0;
+    });
+  });
+  document.querySelectorAll('.product-story').forEach(dialog => {
+    dialog.querySelector('[data-close-story]').addEventListener('click', () => dialog.close());
+    dialog.addEventListener('close', () => dialog.querySelectorAll('video').forEach(video => video.pause()));
+    dialog.addEventListener('click', event => {
+      if (event.target !== dialog) return;
+      const r = dialog.getBoundingClientRect();
+      if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) dialog.close();
+    });
+  });
+})();
+
 (function () {
   const title = document.querySelector('[data-catalog-title]');
   if (!title) return;
@@ -144,7 +167,15 @@
     if (new URL(a.href).searchParams.get('view') === view) a.setAttribute('aria-current', 'page');
   });
   window.MRF?.updateLinks();
-  if(location.hash)requestAnimationFrame(()=>document.getElementById(location.hash.slice(1))?.scrollIntoView());
+  if (location.hash) {
+    const initialHash = location.hash;
+    let interacted = false;
+    ['wheel', 'touchstart', 'keydown', 'pointerdown'].forEach(type => window.addEventListener(type, () => { interacted = true; }, {once: true, passive: true}));
+    Promise.all([document.fonts.ready, new Promise(resolve => document.readyState === 'complete' ? resolve() : window.addEventListener('load', resolve, {once: true}))])
+      .then(() => requestAnimationFrame(() => {
+        if (!interacted && location.hash === initialHash) document.getElementById(initialHash.slice(1))?.scrollIntoView({behavior: 'instant'});
+      }));
+  }
 })();
 
 (function () {

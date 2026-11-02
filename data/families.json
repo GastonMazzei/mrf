@@ -3,8 +3,8 @@
     "products": [
       "rad",
       "rf",
-      "sys",
-      "sdr"
+      "sdr",
+      "sys"
     ],
     "services": [
       "pcb",
@@ -33,8 +33,8 @@
       ],
       "image": "rf-imager-fie.jpg",
       "image_alt": [
-        "RF Imager presentado en FIE, según el material provisto por Marsupial RF.",
-        "RF Imager shown at FIE, from material supplied by Marsupial RF."
+        "RF Imager portátil de Marsupial RF.",
+        "Marsupial RF handheld RF Imager."
       ],
       "intro": [
         "Sistemas integrados de radar, radioimágenes y localización.",
@@ -53,33 +53,33 @@
           {
             "src": "assets/field-array-closeup.jpg",
             "alt": [
-              "Prototipo de antenas durante ensayos de campo.",
-              "Antenna prototype during field testing."
+              "Antenas para detección de blancos móviles en exteriores.",
+              "Outdoor antennas for moving-target detection."
             ],
             "caption": [
-              "Prototipo de antenas durante ensayos de campo.",
-              "Antenna prototype during field testing."
+              "Detectá blancos móviles, de día y de noche, en el entorno de tu misión.",
+              "Detect moving targets, day and night, in your operational environment."
             ]
           }
         ],
         [
           [
-            "Detección discreta de drones · radares pasivos",
-            "Covert Drone Detection – Passive Radars"
+            "Radar pasivo CUAS / Monitoreo costero",
+            "CUAS Passive Radar / Coastal Monitoring"
           ],
           [
-            "Línea de I+D en detección pasiva e integración de sensores.",
-            "R&D in passive detection and sensor integration."
+            "Detección sin transmitir. Arquitecturas móviles de un solo nodo para seguridad y mediciones científicas.",
+            "Detect without transmitting. Mobile single-node architectures for security and scientific measurements."
           ],
           {
             "src": "assets/vehicle-antenna.jpg",
             "alt": [
-              "Plataforma experimental de antenas sobre vehículo.",
-              "Experimental vehicle-mounted antenna platform."
+              "Antena de radar pasivo sobre un vehículo.",
+              "Vehicle-mounted passive radar antenna."
             ],
             "caption": [
-              "Plataforma experimental de antenas sobre vehículo.",
-              "Experimental vehicle-mounted antenna platform."
+              "Las bandas VHF y UHF bajas permiten explorar detección pasiva a gran distancia, incluso lejos de centros urbanos cuando hay iluminación adecuada.",
+              "Low UHF and VHF bands support long-range passive radar, including beyond urban settlements where suitable illumination is available."
             ]
           }
         ],
@@ -89,18 +89,18 @@
             "GB-InSAR systems"
           ],
           [
-            "Investigación y desarrollo para monitoreo de desplazamientos.",
-            "Research and development for displacement monitoring."
+            "Productos y servicios de desplazamiento interferométrico.",
+            "Interferometric Displacement Products and Services"
           ],
           {
-            "src": "assets/operations/sar-field.jpg",
+            "src": "assets/updates/gb-insar-field.webp",
             "alt": [
-              "Montaje experimental GB-InSAR.",
-              "Experimental GB-InSAR setup."
+              "Sistema GB-InSAR en una campaña al aire libre.",
+              "GB-InSAR system during an outdoor campaign."
             ],
             "caption": [
-              "Montaje experimental GB-InSAR.",
-              "Experimental GB-InSAR setup."
+              "Radar de apertura sintética interferométrico terrestre para monitoreo de deslizamientos. Sistema en mejora continua.",
+              "Ground Based Interferometric Synthetic Aperture Radar for landslide monitoring, system under continuous improvement!"
             ]
           }
         ],
@@ -118,10 +118,6 @@
             "alt": [
               "El equipo junto al vehículo de demostración; fotografía de nuestro trabajo de campo.",
               "The team beside the demonstration vehicle; a photograph of our field work."
-            ],
-            "caption": [
-              "El equipo junto al vehículo de demostración; fotografía de nuestro trabajo de campo.",
-              "The team beside the demonstration vehicle; a photograph of our field work."
             ]
           }
         ],
@@ -137,12 +133,12 @@
           {
             "src": "assets/portfolio/rf-imager-fie.jpg",
             "alt": [
-              "RF Imager presentado en FIE.",
-              "RF Imager presented at FIE."
+              "RF Imager portátil de Marsupial RF.",
+              "Marsupial RF handheld RF Imager."
             ],
             "caption": [
-              "RF Imager presentado en FIE.",
-              "RF Imager presented at FIE."
+              "Localizá celulares mediante beamforming durante operaciones de búsqueda y rescate.",
+              "Beamform captured cellphone signals to infer their location during Search and Rescue Ops."
             ]
           }
         ],
@@ -152,29 +148,65 @@
             "Room scanning"
           ],
           [
-            "Mapas espaciales de intensidad RF como una aplicación de la plataforma.",
-            "Spatial RF-intensity maps as a platform application."
-          ]
+            "Mapas RF persistentes de ambientes, aumentados con SLAM.",
+            "Persistent SLAM-augmented RF maps of environments!"
+          ],
+          {
+            "badge": [
+              "TRABAJO EN CURSO",
+              "WORK IN PROGRESS"
+            ]
+          }
         ],
         [
           [
-            "IMU, cámaras y SLAM",
-            "IMU, cameras & SLAM"
+            "Radar de velocidad de salida",
+            "Muzzle Velocity Radar"
           ],
           [
-            "Integraciones propuestas para relacionar mediciones RF con orientación, imágenes y mapas del entorno. Su validación forma parte del desarrollo.",
-            "Proposed integrations linking RF measurements to orientation, imagery and environment maps. Validation is part of development."
-          ]
+            "Instrumentación radar sin contacto para medir velocidad en bancos de ensayo.",
+            "Non-contact radar instrumentation for velocity measurements on test ranges."
+          ],
+          {
+            "badge": [
+              "Foco actual de I+D",
+              "Current R&D Focus"
+            ],
+            "src": "assets/updates/radar-sensor-cad.webp",
+            "alt": [
+              "Diseño CAD de un módulo sensor radar compacto.",
+              "CAD design of a compact radar sensor module."
+            ],
+            "caption": [
+              "Módulo sensor · diseño CAD.",
+              "Sensor module · CAD design."
+            ]
+          }
         ],
         [
           [
-            "Sistemas para escenarios específicos",
-            "Scenario-specific systems"
+            "Disdrómetro de radar",
+            "Radar Disdrometer for Weather Applications"
           ],
           [
-            "Estudios e integración para búsqueda, localización y sensado a través de obstáculos, según los requisitos y la viabilidad del escenario.",
-            "Studies and integration for search, localization and sensing through obstacles, according to requirements and scenario feasibility."
-          ]
+            "Sensado de precipitación y velocidad de caída para campañas meteorológicas, con integración compacta para exteriores.",
+            "Rainfall and fall-speed sensing for weather campaigns, with compact outdoor integration."
+          ],
+          {
+            "badge": [
+              "Foco actual de I+D",
+              "Current R&D Focus"
+            ],
+            "images": [
+              {
+                "src": "assets/updates/radar-weather-cad.webp",
+                "alt": [
+                  "CAD del equipo compacto de radar meteorológico y su chasis.",
+                  "CAD of the compact weather radar instrument and enclosure."
+                ]
+              }
+            ]
+          }
         ]
       ],
       "portfolio": null,
@@ -193,8 +225,8 @@
         ]
       ],
       "preview_description": [
-        "Sistemas integrados de radar, radioimágenes y localización.",
-        "Integrated radar, RF imaging and localization systems."
+        "Tecnologías de localización de celulares para búsqueda y rescate urbano (exclusivo para organismos gubernamentales).",
+        "Cellphone locator technologies for Urban Search and Rescue (government agencies only)."
       ],
       "preview_media": [
         {
@@ -287,32 +319,21 @@
         ]
       ],
       "preview_title": [
-        "SDR coherentes multicanal a precio competitivo",
-        "Price Competitive Multi-channel Coherent SDRs"
+        "SDR coherentes multicanal",
+        "Multichannel Coherent SDRs"
       ],
       "preview_description": [
-        "Turtle SDR y nuestra HAT Dual USB3 para Raspberry Pi 5: integración compacta para adquisición multicanal. HAT actualmente en I+D.",
-        "Turtle SDR and our Dual USB3 HAT for Raspberry Pi 5: compact integration for multichannel acquisition. HAT currently in R&D."
+        "Transceptores de radio definida por software con 10 canales coherentes, a precio competitivo, para tus aplicaciones.",
+        "Price-competitive 10-channel coherent software-defined radio transceivers for your favourite applications!"
       ],
       "preview_media": [
         {
-          "src": "assets/operations/coherent-sdr-stack.jpg",
+          "src": "assets/updates/sdr-stack.webp",
           "alt": [
             "SDR multicanal apilados y encendidos en nuestro banco.",
             "Stacked multichannel SDRs powered on at our bench."
           ],
           "class": "operational"
-        },
-        {
-          "src": "assets/hat-usb3/hat2-iso.png",
-          "alt": [
-            "Render del diseño A2 de Marsupial RF: placa con dos controladores USB3 y conector USB-A doble.",
-            "Render of the Marsupial RF A2 design: board with two USB3 controllers and a stacked dual USB-A connector."
-          ],
-          "caption": [
-            "CAD A2 · Actualmente en I+D",
-            "A2 CAD · Currently in R&D"
-          ]
         }
       ]
     },
@@ -357,23 +378,50 @@
         "Health technology"
       ],
       "summary": [
-        "Una línea joven de investigación y desarrollo, abierta a colaboraciones.",
-        "An early research and development programme, open to collaboration."
+        "Sensado electromagnético y electrónica para nuevas herramientas de salud.",
+        "Electromagnetic sensing and electronics for new health technologies."
       ],
       "intro": [
-        "Estamos explorando nuevas formas de sensado. Estos proyectos están en desarrollo y buscan construir evidencia experimental junto con colaboradores.",
-        "We are exploring new sensing approaches. These projects are currently in R&D and seek to build experimental evidence with collaborators."
+        "FieldDS, nuestra startup de tecnología para salud: sensores, electrónica y análisis de señales desarrollados junto a colaboradores científicos.",
+        "FieldDS, our health-technology startup: sensors, electronics and signal analysis developed with scientific collaborators."
       ],
       "options": [
         [
           [
-            "FieldDS · investigación",
-            "FieldDS · research"
+            "FieldDS · sensado no invasivo",
+            "FieldDS · Non-invasive Sensing"
           ],
           [
-            "Investigación de sensado electromagnético para monitoreo no invasivo de glucosa. Sin validación clínica anunciada.",
-            "Electromagnetic sensing research for non-invasive glucose monitoring. No clinical validation claimed."
-          ]
+            "Investigación de sensado electromagnético para monitoreo no invasivo de glucosa. Desarrollo de investigación, no un dispositivo de diagnóstico clínico.",
+            "Electromagnetic sensing research for non-invasive glucose monitoring. A research programme, not a clinical diagnostic device."
+          ],
+          {
+            "images": [
+              {
+                "src": "assets/updates/fieldds-sensing.webp",
+                "alt": [
+                  "Equipo de FieldDS trabajando con su sensor de antebrazo.",
+                  "The FieldDS team working with its forearm sensor."
+                ]
+              },
+              {
+                "src": "assets/updates/fieldds-electronics.webp",
+                "alt": [
+                  "Sensor y electrónica de adquisición del proyecto FieldDS.",
+                  "Sensor and acquisition electronics from the FieldDS project."
+                ]
+              }
+            ],
+            "badge": [
+              "Foco actual de I+D",
+              "Current R&D Focus"
+            ],
+            "href": "https://www.instagram.com/field.ds/",
+            "link_label": [
+              "Seguí a FieldDS en Instagram",
+              "Follow FieldDS on Instagram"
+            ]
+          }
         ],
         [
           [
@@ -596,12 +644,11 @@
       ],
       "preview_media": [
         {
-          "src": "assets/portfolio/patch-array-cad.webp",
+          "src": "assets/concepts/cavity-shell.svg",
           "alt": [
-            "Render de nuestro arreglo de antenas.",
-            "Render of our antenna array."
-          ],
-          "class": "cad"
+            "Concepto de envolvente de filtro con cuatro cavidades y tapa separada.",
+            "Concept of a four-cavity filter shell with an exploded cover."
+          ]
         },
         {
           "src": "assets/portfolio/filter-bank-built.webp",
@@ -619,6 +666,10 @@
           ],
           "class": "cad"
         }
+      ],
+      "preview_title": [
+        "Equipos de microondas",
+        "Microwave Equipment"
       ]
     },
     {
@@ -632,7 +683,7 @@
       ],
       "name": [
         "Antenas y radomos",
-        "Antennas & radomes"
+        "Antennas & Radomes"
       ],
       "summary": [
         "Antenas de bajo perfil, arreglos y protección adaptados a tu plataforma.",
@@ -644,72 +695,82 @@
         "Render of the antenna array designed by Marsupial RF."
       ],
       "intro": [
-        "La antena forma parte del equipo: consideramos sus dimensiones, integración mecánica y entorno de operación junto con el comportamiento electromagnético.",
-        "An antenna is part of a larger device: dimensions, mechanical integration and operating environment matter alongside electromagnetic performance."
+        "",
+        ""
       ],
       "options": [
         [
           [
-            "Antenas ultralivianas para plataformas aéreas",
-            "Ultralight antennas for airborne platforms"
+            "Antena WiFi 2.4 de alta ganancia y ultraliviana",
+            "High Gain Ultra Light WiFi 2.4 Antenna"
           ],
           [
-            "Diseño de geometría, metalizado e integración según banda, masa, polarización y montaje.",
-            "Geometry, metallization and integration design for the required band, mass, polarization and mounting."
+            "Diseño ultraliviano para WiFi 2.4 GHz con estructura impresa y metalizada. La alta ganancia es el objetivo del desarrollo; la caracterización RF está en curso.",
+            "Ultralight WiFi 2.4 GHz design with a printed and metallized structure. High gain is the design target; RF characterization is in progress."
           ],
           {
-            "src": "assets/antenna-freecad-revb.png",
-            "alt": [
-              "Antena impresa: exterior y sección del modelo FreeCAD Rev B.",
-              "Printed antenna: exterior and section of our Rev B FreeCAD model."
+            "images": [
+              {
+                "src": "assets/updates/wifi24-exterior.webp",
+                "alt": [
+                  "Antena WiFi 2.4 GHz ultraliviana: vista exterior del CAD.",
+                  "Ultralight WiFi 2.4 GHz antenna: exterior CAD view."
+                ]
+              },
+              {
+                "src": "assets/updates/wifi24-cutaway.webp",
+                "alt": [
+                  "Interior de la antena WiFi 2.4 GHz.",
+                  "Interior of the WiFi 2.4 GHz antenna."
+                ]
+              }
             ],
-            "caption": [
-              "Diseño propio en FreeCAD · Currently in R&D",
-              "Our FreeCAD design · Currently in R&D"
+            "badge": [
+              "Foco actual de I+D",
+              "Current R&D Focus"
             ]
           }
         ],
         [
           [
-            "Arreglos y patch arrays",
-            "Antenna arrays & patch arrays"
+            "Frontends MIMO a medida",
+            "Custom MIMO Frontends"
           ],
           [
-            "Configuración, alimentación e integración de arreglos según la aplicación.",
-            "Array configuration, feeding and integration for the intended application."
+            "Frontends multipuerto en PCB y electroplateados para proyectos de gran apertura.",
+            "Multi-port PCB and Electroplated frontends for large aperture projects"
           ],
           {
-            "src": "assets/portfolio/patch-array-cad.webp",
-            "alt": [
-              "Arreglo de antenas: diseño CAD existente.",
-              "Antenna array: existing CAD design."
-            ],
-            "class": "",
-            "caption": [
-              "Diseño CAD de nuestro portfolio.",
-              "CAD design from our portfolio."
+            "images": [
+              {
+                "src": "assets/portfolio/patch-array-cad.webp",
+                "alt": [
+                  "Arreglo de antenas: diseño CAD existente.",
+                  "Antenna array: existing CAD design."
+                ],
+                "class": ""
+              },
+              {
+                "src": "assets/portfolio/patch-array-built.webp",
+                "alt": [
+                  "Arreglo de antenas construido en nuestro taller.",
+                  "Antenna array built in our workshop."
+                ]
+              }
             ]
           }
         ],
         [
           [
-            "Polarización y banda",
-            "Polarization & bandwidth"
+            "¿Requisitos a medida?",
+            "Custom Requirements?"
           ],
           [
-            "Desarrollos de doble polarización o banda ancha, con requisitos y ensayos definidos por proyecto.",
-            "Dual-polarization or broadband developments, with project-specific requirements and testing."
+            "Contactanos:",
+            "Contact us:"
           ],
           {
-            "src": "assets/portfolio/patch-array-built.webp",
-            "alt": [
-              "Arreglo de antenas construido en nuestro taller.",
-              "Antenna array built in our workshop."
-            ],
-            "caption": [
-              "Arreglo construido · desarrollo propio",
-              "Built antenna array · our development"
-            ]
+            "kind": "contact"
           }
         ],
         [
@@ -718,9 +779,20 @@
             "Frequency-selective radomes"
           ],
           [
-            "Investigación de radomos y superficies para controlar bandas de paso y rechazo.",
-            "Research into radomes and surfaces for passband and stopband control."
-          ]
+            "Metamateriales para aplicaciones de microondas.",
+            "Metamaterials for Microwave Applications"
+          ],
+          {
+            "src": "assets/updates/fss-grating.webp",
+            "alt": [
+              "Geometría de rejilla dieléctrica del estudio de superficies selectivas.",
+              "Dielectric-grating geometry from the frequency-selective-surface study."
+            ],
+            "caption": [
+              "Geometría de superficie selectiva.",
+              "Frequency-selective surface geometry."
+            ]
+          }
         ]
       ],
       "portfolio": "portfolio.html#patch-array",
@@ -834,10 +906,10 @@
       ],
       "service_media": [
         {
-          "src": "assets/operations/pcb-workbench.jpg",
+          "src": "assets/operations/team-electronics-lab.jpg",
           "alt": [
-            "Trabajo de electrónica en nuestro laboratorio, visto desde arriba.",
-            "Electronics work in our laboratory, seen from above."
+            "Nuestro equipo trabajando en el laboratorio de electrónica.",
+            "Our team working in the electronics lab."
           ],
           "class": "operational"
         }
@@ -868,7 +940,14 @@
           [
             "Control de periféricos, comunicaciones e interfaces para electrónica a medida.",
             "Peripheral control, communications and interfaces for custom electronics."
-          ]
+          ],
+          {
+            "src": "assets/updates/firmware-team.webp",
+            "alt": [
+              "Nuestro equipo desarrollando firmware y electrónica en el laboratorio.",
+              "Our team developing firmware and electronics in the lab."
+            ]
+          }
         ],
         [
           [
@@ -945,12 +1024,11 @@
       ],
       "service_media": [
         {
-          "src": "assets/operations/team-electronics-lab.jpg",
+          "src": "assets/updates/firmware-team.webp",
           "alt": [
-            "Nuestro equipo trabajando en el laboratorio de electrónica.",
-            "Our team working in the electronics lab."
-          ],
-          "class": "operational"
+            "Nuestro equipo desarrollando firmware y electrónica en el laboratorio.",
+            "Our team developing firmware and electronics in the lab."
+          ]
         }
       ]
     },
@@ -1035,11 +1113,7 @@
             "Ilustración de cámara perimetral, antena y conectividad en el campo.",
             "Illustration of a perimeter camera, antenna and rural connectivity."
           ],
-          "class": "concept",
-          "caption": [
-            "Ilustración de aplicación",
-            "Application illustration"
-          ]
+          "class": "concept"
         }
       ],
       "service_intro": [
@@ -1061,10 +1135,6 @@
             "alt": [
               "Concepto ilustrativo de seguridad perimetral y conectividad rural.",
               "Illustrative concept for perimeter security and rural connectivity."
-            ],
-            "caption": [
-              "Ilustración de aplicación",
-              "Application illustration"
             ]
           }
         ],
@@ -1165,8 +1235,8 @@
             "SAR / GB-InSAR"
           ],
           [
-            "Desarrollo experimental para imagen y medición de desplazamientos; calibración y repetibilidad forman parte de la validación.",
-            "Experimental development for imaging and displacement measurement; calibration and repeatability are part of validation."
+            "Sistemas y servicios de imagen radar y monitoreo interferométrico de desplazamientos.",
+            "Radar imaging systems and interferometric displacement monitoring services."
           ]
         ],
         [
@@ -1209,12 +1279,12 @@
         ]
       ],
       "preview_title": [
-        "Detección pasiva de drones",
-        "Passive drone detection"
+        "Radar pasivo CUAS / Monitoreo costero",
+        "CUAS Passive Radar / Coastal Monitoring"
       ],
       "preview_description": [
-        "Radar pasivo móvil de un solo nodo, sobre señales de comunicaciones terrestres.",
-        "Mobile single-node passive radar over terrestrial communication signals."
+        "Tecnología de uso dual: seguridad y mediciones científicas — Más información",
+        "Dual Use Technology: HLS and Scientific Measurements — More Info"
       ],
       "preview_media": [
         {
@@ -1232,12 +1302,11 @@
       ],
       "service_media": [
         {
-          "src": "assets/operations/sar-field.jpg",
+          "src": "assets/updates/gb-insar-services.webp",
           "alt": [
-            "GB-InSAR en una prueba de campo junto al río.",
-            "GB-InSAR in a field test by the river."
-          ],
-          "class": "sar"
+            "Radar y antenas sobre el riel de barrido, junto al río.",
+            "Radar and antennas on the scanning rail by the river."
+          ]
         }
       ],
       "service_intro": [
@@ -1253,9 +1322,115 @@
           [
             "Estudio de aplicación, adquisición y análisis para observar cambios en una estructura o un sitio. El alcance se define con la geometría y las condiciones de medición.",
             "Application assessment, acquisition and analysis to observe changes in a structure or site. Scope follows geometry and measurement conditions."
-          ]
+          ],
+          {
+            "src": "assets/updates/gb-insar-field.webp",
+            "alt": [
+              "Sistema GB-InSAR en una campaña al aire libre.",
+              "GB-InSAR system during an outdoor campaign."
+            ]
+          }
         ]
-      ]
+      ],
+      "preview_target": "familias.html?view=products#sys-option-2"
     }
-  ]
+  ],
+  "institutional_notice": [
+    "MARSUPIAL RF S.R.L. es una empresa argentina. Nuestra política es no participar en colaboraciones ni transferencias de tecnología que violen controles de exportación aplicables, incluido ITAR. Radar y búsqueda y rescate: consultas de organismos gubernamentales desde correos institucionales; otras consultas podrán derivarse a las autoridades competentes. PCB, software y electrónica: disponibles para particulares y empresas.",
+    "MARSUPIAL RF S.R.L. is an Argentine company. Our policy is not to participate in collaborations or technology transfers that violate applicable export controls, including ITAR. Radar and Search and Rescue: government-agency inquiries from institutional emails; other inquiries may be referred to the appropriate authorities. PCB, software and electronics: open to individuals and businesses."
+  ],
+  "passive_radar_story": {
+    "title": [
+      "Radar pasivo CUAS / Monitoreo costero",
+      "CUAS Passive Radar / Coastal Monitoring"
+    ],
+    "intro": [
+      "Detectá blancos móviles sin transmitir. La seguridad y la protección de infraestructura crítica requieren conciencia situacional constante, con foco en sistemas no tripulados. Nuestros sistemas se orientan a un solo nodo —un operador, un vehículo o una torreta— y al despliegue móvil. Detectá sin ser detectado.",
+      "Detect moving targets without transmitting. Homeland Security and Critical Infrastructure Protection require constant situational awareness with a focus on unmanned systems. Our systems are single-node (single operator, single car, or single turret) and mobile-friendly. Detect without being detected."
+    ],
+    "media": [
+      {
+        "src": "assets/updates/passive-radar-operator.webp",
+        "video": "assets/updates/passive-radar-field.mp4",
+        "alt": [
+          "Operador con una antena y un avión en vuelo durante una prueba de radar pasivo.",
+          "Operator with an antenna and a passing aircraft during a passive-radar field test."
+        ],
+        "caption": [
+          "Radar pasivo en campo · video original de nuestro equipo.",
+          "Passive radar in the field · original footage from our team."
+        ]
+      },
+      {
+        "src": "assets/updates/delay-doppler.webp",
+        "alt": [
+          "Mapa retardo–Doppler de señales LTE: exceso de recorrido y frecuencia de modulación.",
+          "LTE delay–Doppler map: excess path length and modulation frequency."
+        ],
+        "caption": [
+          "Mediciones LTE · mapa retardo–Doppler.",
+          "LTE measurements · delay–Doppler map."
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "title": [
+          "Superioridad operativa",
+          "Operationally Superior"
+        ],
+        "text": [
+          "Muchas propuestas distribuyen nodos fijos que aprovechan señales urbanas, como la TV digital, para triangular blancos. Nuestro foco es el despliegue rápido y las situaciones de un solo nodo: un vehículo con una antena en el techo para observar amenazas en movimiento.",
+          "Many passive-radar approaches use multiple fixed nodes and widespread urban signals, such as digital TV, for target triangulation. Our focus is rapid deployment and single-node situations: a car with an antenna on its roof to provide awareness of moving threats."
+        ],
+        "media": [
+          {
+            "src": "assets/vehicle-antenna.jpg",
+            "alt": [
+              "Antena de radar pasivo sobre un vehículo.",
+              "Vehicle-mounted passive radar antenna."
+            ],
+            "caption": [
+              "Las bandas VHF y UHF bajas permiten explorar detección pasiva a gran distancia, incluso lejos de centros urbanos cuando hay iluminación adecuada.",
+              "Low UHF and VHF bands support long-range passive radar, including beyond urban settlements where suitable illumination is available."
+            ]
+          }
+        ]
+      },
+      {
+        "title": [
+          "Uso dual · mediciones científicas",
+          "Dual Usage – Scientific Measurements"
+        ],
+        "text": [
+          "Las costas urbanas suelen contar con numerosos transmisores de telefonía celular. Sus señales permiten caracterizar el oleaje y estudiar eventos costeros de forma cuantitativa, incluida la presencia de embarcaciones en movimiento. En Chapadmalal comparamos mediciones LTE con modelos de frentes de onda.",
+          "Urban coastal scenes tend to be paired with many cellphone transmitters. Their signals provide an excellent source for characterizing wave behaviour in oceanographic missions focused on quantitative coastal information, including moving vessels. In Chapadmalal, we compared LTE measurements with wavefront models."
+        ],
+        "media": [
+          {
+            "src": "assets/updates/coastal-lte.webp",
+            "alt": [
+              "Antena LTE junto al mar en Chapadmalal.",
+              "LTE antenna by the sea in Chapadmalal."
+            ],
+            "caption": [
+              "Chapadmalal · mediciones costeras con señales LTE.",
+              "Chapadmalal · coastal measurements using LTE signals."
+            ]
+          },
+          {
+            "src": "assets/updates/coastal-wave-results.webp",
+            "alt": [
+              "Mapas de mediciones costeras, ajuste del modelo de oleaje y residuo.",
+              "Coastal measurement maps, fitted wave model and residual."
+            ],
+            "caption": [
+              "Datos medidos, modelo y residuo · contribución a PREVENIR.",
+              "Measured data, model and residual · PREVENIR contribution."
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
