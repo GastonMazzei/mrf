@@ -30,6 +30,20 @@ From this directory, run `python3 -m http.server 8000`, then open <http://localh
 | Website photos | `assets/` |
 | Product images and downloadable catalogues | `products/`, `documents/` |
 
+## Open source software
+
+`open-source.html` showcases the public `Marsupial-RF/kicad-passive-aligner` and
+`Marsupial-RF/hackrf-standalone` repositories. It is linked from the header and
+the vertical catalogue navigation. Edit the page, `open-source.css`, and the
+Portuguese strings in `data/pt-BR.json`, then run `scripts/build_regions.py`.
+Keep the new page in the regional page lists in that script and `site.js`.
+
+The Passive Aligner images in `assets/open-source/` come from its synthetic
+public example and actual plugin dialog. They demonstrate geometry, not measured
+RF results. The plugin preserves net identities and checks before/after DRC;
+it does not certify impedance or replace electromagnetic simulation. HackRF
+firmware capabilities are described in the linked upstream fork's README.
+
 ## Updating featured projects
 
 Edit the `featured-projects` section in `index.html`. Keep each card short: a real image, a title, one paragraph, and a link to the corresponding product or research section. Match technical claims to the product page. Give new images their real dimensions and descriptive EN/ES alt text.

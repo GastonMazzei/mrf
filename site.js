@@ -5,7 +5,7 @@
   const params = new URLSearchParams(location.search);
   const route = location.pathname.match(/^\/(es|en|br)\/([^/]+)\//);
   const file = location.pathname.split('/').pop() || 'index.html';
-  const regionalPages = ['index.html', 'familias.html', 'portfolio.html', 'hat-usb3.html'];
+  const regionalPages = ['index.html', 'familias.html', 'portfolio.html', 'hat-usb3.html', 'open-source.html'];
   const regional = !!config && regionalPages.includes(file);
   const validCountry = code => !!config?.country_market[code];
   const marketOf = code => config?.country_market[code] || 'global';

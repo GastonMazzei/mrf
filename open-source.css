@@ -1,0 +1,16 @@
+.oss-layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:54px;padding-block:48px 80px}
+.oss-layout>.market-strip{grid-column:1/-1;margin:0}.oss-sidebar{grid-column:1}.oss-content{grid-column:2}
+.oss-sidebar nav{position:sticky;top:110px;display:flex;flex-direction:column;gap:5px;border-left:2px solid var(--line);padding-left:15px;font-size:14px}
+.oss-sidebar a{padding:10px 0;line-height:1.4}.oss-sidebar a[aria-current]{color:var(--product);font-weight:700}
+.oss-content{min-width:0;max-width:980px}.oss-intro{margin-bottom:38px}.oss-intro h1{font-size:clamp(32px,4vw,56px);line-height:1.08;letter-spacing:-.045em;margin:18px 0}
+.oss-intro p:last-child{max-width:680px;font-size:18px;line-height:1.65;color:var(--muted)}
+.oss-intro .small-label{display:flex;align-items:center;gap:12px}.oss-flag{border-radius:2px}
+.oss-project{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:32px;margin-top:25px;scroll-margin-top:110px}
+.oss-project h2{font-size:32px;letter-spacing:-.035em;margin:10px 0 18px}.oss-project p,.oss-project li{font-size:16px;line-height:1.7;color:var(--muted)}
+.oss-project ul{padding-left:20px;margin:22px 0}.oss-project li{margin-bottom:6px}.oss-meta{font:11px var(--mono);letter-spacing:.08em;color:var(--product)}
+.oss-project figure{margin:24px 0 10px}.oss-project img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:12px}
+.oss-project figcaption{font-size:12px;line-height:1.5;color:var(--muted);margin-top:9px}.oss-links{display:flex;gap:24px;align-items:center;flex-wrap:wrap;margin-top:20px}
+.oss-project details{border-top:1px solid var(--line);margin-top:24px;padding-top:20px}.oss-project summary{cursor:pointer;color:var(--product);font-weight:600}.oss-project details p{margin:16px 0}
+.oss-flow{display:flex;gap:12px;flex-wrap:wrap;align-items:center;padding:24px 0;font:13px var(--mono)}.oss-flow span:nth-child(odd){padding:14px;border:1px solid var(--line);border-radius:10px;background:var(--paper)}
+@media(max-width:1100px){.oss-layout{grid-template-columns:180px minmax(0,1fr);gap:28px}.new-nav{gap:12px;font-size:12px}}
+@media(max-width:850px){.oss-layout{grid-template-columns:1fr;padding-top:25px;gap:25px}.oss-content,.oss-sidebar{grid-column:1}.oss-sidebar nav{position:static;flex-direction:row;flex-wrap:wrap;font-size:12px;gap:8px 20px;border-left:0;border-bottom:1px solid var(--line);padding:0 0 12px}.oss-project{padding:23px}.oss-intro{margin-bottom:25px}}
