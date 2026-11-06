@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-PAGES = ('index.html', 'familias.html', 'portfolio.html', 'hat-usb3.html')
+PAGES = ('index.html', 'familias.html', 'portfolio.html', 'hat-usb3.html', 'open-source.html')
 LANGUAGES = {'es': 'es', 'en': 'en', 'br': 'pt'}
 SPAN_ES = re.compile(r'<span class="lang lang-es">(.*?)</span>', re.S)
 
@@ -45,7 +45,7 @@ def main():
         content = re.sub(r'data-name-es="([^"]*)"', lambda m: m[0] + ' data-name-pt="' + html.escape(translations.get(html.unescape(m[1]), html.unescape(m[1])), quote=True) + '"', content)
         content = re.sub(r' data-alt-pt="[^"]*"', '', content)
         content = re.sub(r'data-alt-es="([^"]*)"', lambda m: m[0] + ' data-alt-pt="' + html.escape(translations.get(html.unescape(m[1]), html.unescape(m[1])), quote=True) + '"', content)
-        title_pt = {'index.html': 'Marsupial RF — Eletrônica, antenas e sistemas RF', 'familias.html': 'Marsupial RF — Produtos e serviços', 'portfolio.html': 'Marsupial RF — Portfolio', 'hat-usb3.html': 'Marsupial RF — Dual-controller True 2xUSB-3 Xpansion HAT para Raspberry Pi 5'}[name]
+        title_pt = {'open-source.html': 'Open Source Software — Marsupial RF', 'index.html': 'Marsupial RF — Eletrônica, antenas e sistemas RF', 'familias.html': 'Marsupial RF — Produtos e serviços', 'portfolio.html': 'Marsupial RF — Portfolio', 'hat-usb3.html': 'Marsupial RF — Dual-controller True 2xUSB-3 Xpansion HAT para Raspberry Pi 5'}[name]
         content = re.sub(r' data-title-pt="[^"]*"', '', content)
         content = content.replace('<body ', '<body data-title-pt="' + title_pt + '" ', 1)
         (ROOT/name).write_text(content)

@@ -489,5 +489,19 @@
   "PCIe Gen3 ×1 mediante cinta FFC de 16 contactos": "PCIe Gen3 ×1 por cabo FFC de 16 contatos",
   "La Raspberry Pi 5 usa Gen2 de forma predeterminada. El modo Gen3 se activa en la configuración de la Pi.": "A Raspberry Pi 5 usa Gen2 por padrão. O modo Gen3 é ativado na configuração da Pi.",
   "Para sistemas compactos con varios dispositivos USB: SDR, instrumentación y adquisición. Contactanos para conversar sobre tu integración.": "Para sistemas compactos com vários dispositivos USB: SDR, instrumentação e aquisição. Entre em contato para conversar sobre sua integração.",
-  "Vista superior de la HAT, con dos hosts y salida USB apilada.": "Vista superior da HAT, com dois hosts e portas USB empilhadas."
+  "Vista superior de la HAT, con dos hosts y salida USB apilada.": "Vista superior da HAT, com dois hosts e portas USB empilhadas.",
+  "Open Source Software": "Open Source Software",
+  "Herramientas que construimos y compartimos para diseñar electrónica y trabajar con radiofrecuencia. Código, ejemplos y documentación abiertos.": "Ferramentas que construímos e compartilhamos para projetar eletrônica e trabalhar com radiofrequência. Código, exemplos e documentação abertos.",
+  "Una resistencia en serie no debería obligar a la pista a dar un rodeo. Este plugin alinea resistencias, capacitores e inductores de dos pads con su trayectoria local y reconecta las pistas existentes.": "Um resistor em série não deveria obrigar a trilha a fazer um desvio. Este plugin alinha resistores, capacitores e indutores de dois pads com seu caminho local e reconecta as trilhas existentes.",
+  "Ejemplo sintético: cobre exportado desde KiCad antes y después. Corrección geométrica; no es una medición RF.": "Exemplo sintético: cobre exportado do KiCad antes e depois. Correção geométrica; não é uma medição RF.",
+  "Vista previa, conservación de redes y verificación DRC antes de aplicar.": "Prévia, preservação das redes e verificação DRC antes de aplicar.",
+  "Interfaz gráfica y CLI para automatización. Sin servicio de IA ni cuenta.": "Interface gráfica e CLI para automação. Sem serviço de IA ou conta.",
+  "Primera versión probada en KiCad 10.0.7 / Linux. Omite conexiones ambiguas; no reemplaza un autorouter ni una simulación RF.": "Primeira versão testada no KiCad 10.0.7 / Linux. Ignora conexões ambíguas; não substitui um autorroteador nem uma simulação RF.",
+  "Código e instalación": "Código e instalação",
+  "Descargar plugin": "Baixar plugin",
+  "Cómo se usa": "Como usar",
+  "Seleccioná el componente → Passive Aligner → Check DRC → Apply alignment. Revisá el resultado y guardá la placa.": "Selecione o componente → Passive Aligner → Check DRC → Apply alignment. Revise o resultado e salve a placa.",
+  "Un fork del firmware de HackRF para transmitir una secuencia IQ en loop continuo al encender, sin una computadora enviando muestras por USB.": "Um fork do firmware do HackRF para transmitir uma sequência IQ em loop contínuo ao ligar, sem um computador enviando amostras por USB.",
+  "La forma de onda se define al compilar. Frecuencia, tasa de muestreo, filtro de banda base y ganancia se configuran en el firmware. Conserva el camino M0/SGPIO/DAC original; no requiere modificar la CPLD de HackRF One.": "A forma de onda é definida na compilação. Frequência, taxa de amostragem, filtro de banda base e ganho são configurados no firmware. Mantém o caminho M0/SGPIO/DAC original; não requer modificar a CPLD do HackRF One.",
+  "Código y documentación": "Código e documentação"
 }

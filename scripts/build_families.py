@@ -179,7 +179,7 @@ def catalogue_navigation():
             subs='<ul>' + subs + '</ul>'
         groups.append('<li' + country_attrs(f) + ' data-nav-family="' + f['id'] + '"><a class="catalog-family-link" href="#' + f['id'] + '">' + bi(f['name']) + '</a>' + subs + '</li>')
     return ('<aside class="catalog-drawer" aria-label="Catálogo / Catalogue"><button class="catalog-toggle" type="button" aria-expanded="false" aria-controls="catalog-tree">☰ <span>' + bi(['Catálogo','Catalogue']) + '</span></button>'
-            + '<nav class="case-nav" id="catalog-tree"><div class="catalog-roots"><a href="familias.html?view=products">' + bi(['Productos','Products']) + '</a><a href="familias.html?view=services">' + bi(['Servicios','Services']) + '</a></div><ul>' + ''.join(groups) + '</ul></nav></aside>')
+            + '<nav class="case-nav" id="catalog-tree"><div class="catalog-roots"><a href="familias.html?view=products">' + bi(['Productos','Products']) + '</a><a href="familias.html?view=services">' + bi(['Servicios','Services']) + '</a><a href="open-source.html">Open Source Software</a></div><ul>' + ''.join(groups) + '</ul></nav></aside>')
 
 
 def product_overview():
@@ -205,7 +205,7 @@ def main():
     nav = '<nav class="new-nav" id="main-navigation" aria-label="Principal / Main">' + ''.join(
         '<a href="' + url + '">' + bi(name) + '</a>' for url, name in [
             ('familias.html?view=products', ['Productos', 'Products']), ('familias.html?view=services', ['Servicios', 'Services']),
-            ('portfolio.html', ['Casos', 'Case studies']), ('index.html#about', ['Nosotros', 'About']),
+            ('portfolio.html', ['Casos', 'Case studies']), ('open-source.html', ['Open Source Software', 'Open Source Software']), ('index.html#about', ['Nosotros', 'About']),
             ('index.html#contact', ['Contacto', 'Contact'])]) + '</nav>'
     updated = re.sub(r'<nav class="new-nav".*?</nav>', lambda _: nav, updated, count=1, flags=re.S)
     path.write_text(updated)
